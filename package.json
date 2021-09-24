@@ -1,0 +1,28 @@
+{
+  "name": "neo-jquery",
+  "version": "1.0.0",
+  "description": "libreria de javascript para el uso de DOM y ajax",
+  "main": "./browser/index.js",
+  "type": "module",
+  "keywords": [
+    "neo-jquery",
+    "neo jquery",
+    "jquery",
+    "DOM",
+    "es6+"
+  ],
+  "author": "omega5300",
+  "license": "MIT",
+  "exports": {
+    "import": "./mjs/index.mjs",
+    "require": "./cjs/index.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omega5300/neo-jquery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omega5300/neo-jquery/issues"
+  },
+  "homepage": "https://github.com/omega5300/neo-jquery#readme"
+}
