@@ -1,6 +1,6 @@
 {
   "name": "neo-jquery",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "libreria de javascript para el uso de DOM y ajax",
   "main": "./browser/index.js",
   "type": "module",

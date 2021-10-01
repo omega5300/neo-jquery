@@ -4,15 +4,25 @@ const styles = document.createElement('style');
 styles.textContent = `
 .show {
   opacity: 1;
-  transition: opacity 400ms;
 }
 .hide {
   opacity: 0;
+}
+
+.show, .hide {
   transition: opacity 400ms;
 }
 `;
 
 document.head.appendChild(styles);
+
+// create elements
+const $createElement = (el) => document.createElement(el);
+
+// ready
+const $ready = (callback) => document.readyState !== 'loading' 
+  ? callback() 
+  : document.addEventListener('DOMContentLoader', callback);
 
 // body
 const $body = document.body;
@@ -92,6 +102,8 @@ export {
   $date,
   $getJSON,
   $ajax,
+  $ready,
+  $createElement,
   fadeIn,
   fadeOut,
   hide,

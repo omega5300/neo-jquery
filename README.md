@@ -16,7 +16,7 @@ import neoJquery from 'neo-jquery';
 ```
 
 ``` html
-<script src="https://https://unpkg.com/neo-jquery@1.0.0"></script>
+<script src="https://unpkg.com/neo-jquery@1.0.1"></script>
 ```
 
 ## selectors
@@ -80,4 +80,11 @@ $ajax({
     }
 })
 /* $ajax fucntion using fetch API with more callbacks */
+
+/* create elements */
+$createElement('p')
+const parragram = $createElement('p')
+
+// ready
+$ready(() => console.log('loading'))
 ```
