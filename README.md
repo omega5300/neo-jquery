@@ -16,7 +16,7 @@ import neoJquery from 'neo-jquery';
 ```
 
 ``` html
-<script src="https://unpkg.com/neo-jquery@1.0.1"></script>
+<script src="https://unpkg.com/neo-jquery@1.0.2"></script>
 ```
 
 ## selectors

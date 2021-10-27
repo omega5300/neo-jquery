@@ -79,13 +79,15 @@ const $ajax = async ({
 
 // fade effects
 const fadeIn = el => {
-  el.classList.add('show');
-  el.classList.remove('hide');
+  el.classList.contains('hide')
+    ? el.classList.replace('hide', 'show')
+    : el.classList.add('show');
 };
 
 const fadeOut = el => {
-  el.classList.add('hide');
-  el.classList.remove('add');
+  el.classList.contains('show')
+    ? el.classList.replace('show', 'hide')
+    : el.classList.add('hide');
 };
 
 // show and hidden elements

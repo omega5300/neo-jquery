@@ -1,5 +1,9 @@
 # changelog
 
+## version 1.0.2
+
+rewitre fadeIn and fadeOut functions using classList.contains as ternary conditional
+
 ## version 1.0.1
 
 add new functions 
