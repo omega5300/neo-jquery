@@ -1,1 +1,4 @@
 FUNDING.yml
+/src
+tsconfig-*.json
+tsconfig.json

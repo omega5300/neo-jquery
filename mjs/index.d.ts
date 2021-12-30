@@ -1,0 +1,22 @@
+declare type ajax = {
+    url: string;
+    type?: string;
+    data?: any;
+    headers?: any;
+    dataType: string;
+    success: (param: any) => void;
+    failed: (param: any) => void;
+};
+declare const $createElement: (el: string) => HTMLElement;
+declare const $body: HTMLElement;
+declare const $selector: (el: string) => Element | null;
+declare const $selectorAll: (el: string) => NodeListOf<Element>;
+declare const $id: (el: string) => HTMLElement | null;
+declare const $date: (date?: null | any) => Date;
+declare const $getJSON: (url: string, callback: (param: any) => void) => Promise<void>;
+declare const $ajax: ({ url, type, data, headers, dataType, success, failed }: ajax) => Promise<void>;
+declare const fadeIn: (el: HTMLElement | Element) => void;
+declare const fadeOut: (el: HTMLElement | Element) => void;
+declare const hide: (el: any) => string;
+declare const show: (el: any) => string;
+export { $body, $selector, $selectorAll, $id, $date, $getJSON, $ajax, $createElement, fadeIn, fadeOut, hide, show };

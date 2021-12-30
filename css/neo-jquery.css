@@ -1,0 +1,22 @@
+/* 
+ * css module inspirated dorian desings videos
+*/
+
+/* layout */
+.layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* pinterest layout */
+.pin-layout {
+  columns: 5 320px;
+  column-gap: .5em;
+}
+
+.pin-layout-img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: .5em;
+}

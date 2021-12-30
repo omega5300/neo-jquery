@@ -1,46 +1,51 @@
+type ajax = {
+  url: string;
+  type?: string;
+  data?: any;
+  headers?: any;
+  dataType: string;
+  success: (param: any) => void;
+  failed: (param: any) => void;
+};
+
 // dinamic styles
-const styles = document.createElement('style');
+const styles: HTMLStyleElement = document.createElement('style');
 
 styles.textContent = `
-.show {
-  opacity: 1;
-}
-.hide {
-  opacity: 0;
-}
-
-.show, .hide {
-  transition: opacity 400ms;
-}
+  .show {
+    opacity: 1;
+  }
+  .hide {
+    opacity: 0;
+  }
+  
+  .show, .hide {
+    transition: opacity 400ms;
+  }
 `;
 
 document.head.appendChild(styles);
 
 // create elements
-const $createElement = (el) => document.createElement(el);
-
-// ready
-const $ready = (callback) => document.readyState !== 'loading' 
-  ? callback() 
-  : document.addEventListener('DOMContentLoader', callback);
+const $createElement = (el: string) => document.createElement(el);
 
 // body
-const $body = document.body;
+const $body: HTMLElement = document.body;
 
 // query selector
-const $selector = el => document.querySelector(el);
+const $selector = (el: string) => document.querySelector(el);
 
 // selector all
-const $selectorAll = el => document.querySelectorAll(el);
+const $selectorAll = (el: string) => document.querySelectorAll(el);
 
 // selector id
-const $id = el => document.getElementById(el);
+const $id = (el: string) => document.getElementById(el);
 
 // date
-const $date = new Date();
+const $date = (date: null | any = null) => new Date(date)
 
 // ajax
-const $getJSON = async (url, callback) => {
+const $getJSON = async (url: string, callback: (param: any) => void) => {
   return await fetch(url)
     .then(res => res.json())
     .then(data => callback(data));
@@ -54,7 +59,7 @@ const $ajax = async ({
   dataType,
   success,
   failed
-}) => {
+}: ajax) => {
   return await fetch(url, {
     method: type,
     body: data,
@@ -78,25 +83,25 @@ const $ajax = async ({
 };
 
 // fade effects
-const fadeIn = el => {
+const fadeIn = (el: HTMLElement | Element) => {
   el.classList.contains('hide')
     ? el.classList.replace('hide', 'show')
     : el.classList.add('show');
 };
 
-const fadeOut = el => {
+const fadeOut = (el: HTMLElement | Element) => {
   el.classList.contains('show')
     ? el.classList.replace('show', 'hide')
     : el.classList.add('hide');
 };
 
 // show and hidden elements
-const hide = el => (el.style.display = 'none');
+const hide = (el: any) => (el.style.display = 'none');
 
-const show = el => (el.style.display = '');
+const show = (el: any) => (el.style.display = '');
 
 // exports
-module.exports = {
+export = {
   $body,
   $selector,
   $selectorAll,
@@ -104,7 +109,6 @@ module.exports = {
   $date,
   $getJSON,
   $ajax,
-  $ready,
   $createElement,
   fadeIn,
   fadeOut,

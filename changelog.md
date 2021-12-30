@@ -1,5 +1,13 @@
 # changelog
 
+## verison 1.0.3
+
+delete function ready
+
+add scraping module frontend
+css stylesheet
+legacy module only IE 10 and 11 *using js es5*
+
 ## version 1.0.2
 
 rewitre fadeIn and fadeOut functions using classList.contains as ternary conditional

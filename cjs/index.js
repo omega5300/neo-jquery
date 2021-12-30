@@ -65,3 +65,17 @@ const fadeOut = (el) => {
 // show and hidden elements
 const hide = (el) => (el.style.display = 'none');
 const show = (el) => (el.style.display = '');
+module.exports = {
+    $body,
+    $selector,
+    $selectorAll,
+    $id,
+    $date,
+    $getJSON,
+    $ajax,
+    $createElement,
+    fadeIn,
+    fadeOut,
+    hide,
+    show
+};

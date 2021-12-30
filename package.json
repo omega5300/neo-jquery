@@ -1,9 +1,37 @@
 {
   "name": "neo-jquery",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "libreria de javascript para el uso de DOM y ajax",
-  "main": "./browser/index.js",
-  "type": "module",
+  "browser": "./browser/index.js",
+  "exports": {
+    ".": "./cjs/index.js",
+    "./cjs": "./cjs/index.js",
+    "./cjs/scraping": "./cjs/scraping.js",
+    "./mjs": "./mjs/index.js",
+    "./mjs/scraping": "./mjs/scraping.js"
+  },
+  "scripts": {
+    "ts-node": "tsc -p ./tsconfig-node.json",
+    "ts-esm": "tsc -p ./tsconfig-esm.json",
+    "ts-browser": "npx tsc -p ./tsconfig-browser.json",
+    "build": "npm run ts-node && npm run ts-esm && npm run ts-browser"
+  },
+  "typesVersions": {
+    "*": {
+      "/cjs/index.d.ts": [
+        "./cjs/index.d.ts"
+      ],
+      "/mjs/index.d.ts": [
+        "./mjs/index.d.ts"
+      ],
+      "/cjs/*": [
+        "./cjs/*.d.ts"
+      ],
+      "/mjs/*": [
+        "./mjs/*.d.ts"
+      ]
+    }
+  },
   "keywords": [
     "neo-jquery",
     "neo jquery",
@@ -13,10 +41,6 @@
   ],
   "author": "omega5300",
   "license": "MIT",
-  "exports": {
-    "import": "./mjs/index.mjs",
-    "require": "./cjs/index.cjs"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/omega5300/neo-jquery.git"
@@ -24,5 +48,5 @@
   "bugs": {
     "url": "https://github.com/omega5300/neo-jquery/issues"
   },
-  "homepage": "https://github.com/omega5300/neo-jquery#readme"
+  "homepage": "https://neo-jquery.vercel.app"
 }
