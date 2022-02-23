@@ -1,6 +1,6 @@
 {
   "name": "neo-jquery",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "libreria de javascript para el uso de DOM y ajax",
   "browser": "./browser/index.js",
   "exports": {
@@ -13,7 +13,8 @@
   "scripts": {
     "ts-node": "tsc -p ./tsconfig-node.json",
     "ts-esm": "tsc -p ./tsconfig-esm.json",
-    "ts-browser": "npx tsc -p ./tsconfig-browser.json",
+    "ts-browser": "tsc -p ./tsconfig-browser.json",
+    "ts-wc": "tsc -p ./tsconfig-wc.json",
     "build": "npm run ts-node && npm run ts-esm && npm run ts-browser"
   },
   "typesVersions": {
@@ -37,7 +38,9 @@
     "neo jquery",
     "jquery",
     "DOM",
-    "es6+"
+    "es6+",
+    "web components",
+    "typescript"
   ],
   "author": "omega5300",
   "license": "MIT",
@@ -48,5 +51,8 @@
   "bugs": {
     "url": "https://github.com/omega5300/neo-jquery/issues"
   },
-  "homepage": "https://neo-jquery.vercel.app"
+  "homepage": "https://neo-jquery.vercel.app",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
 }

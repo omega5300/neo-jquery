@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "None",
+    "noImplicitUseStrict": true,
+    "declaration": false,
+    "outDir": "./browser"
+  },
+  "files": [
+    "./src/browser/index.ts",
+    "./src/browser/scraping.ts"
+  ],
+  "exclude": [ "./src/esm", "./src/cjs" ],
+  "extends": "./tsconfig.json"
+}

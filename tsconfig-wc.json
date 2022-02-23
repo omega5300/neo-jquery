@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "ES2020",
+    "noImplicitUseStrict": true,
+    "declaration": true,
+    "outDir": "./components"
+  },
+  "files": [
+    "./src/components/accordion.ts",
+    "./src/components/modalImage.ts"
+  ],
+  "exclude": [ "./src/esm", "./src/cjs" ],
+  "extends": "./tsconfig.json"
+}

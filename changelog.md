@@ -1,5 +1,15 @@
 # changelog
 
+## version 1.0.4
+- add web components:
+  - accordion
+  - modal image
+- rewrite $ajax and $getJSON in core module
+- new styles tooltip
+- compatibility with typecscript
+
+note: web components module is universal is compatibility with: browser, cjs electron and ESM.
+
 ## verison 1.0.3
 
 delete function ready

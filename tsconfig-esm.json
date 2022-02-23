@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "ES2020",
+    "noImplicitUseStrict": true,
+    "declaration": true,
+    "outDir": "./mjs"
+  },
+  "files": [
+    "./src/esm/index.ts",
+    "./src/esm/scraping.ts"
+  ],
+  "exclude": [ "./src/cjs", "./src/browser" ],
+  "extends": "./tsconfig.json",
+}

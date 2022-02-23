@@ -46,9 +46,9 @@ const $date = (date: null | any = null) => new Date(date)
 
 // ajax
 const $getJSON = async (url: string, callback: (param: any) => void) => {
-  return await fetch(url)
-    .then(res => res.json())
-    .then(data => callback(data));
+  const res = await fetch(url);
+
+  callback(await res.json())
 };
 
 const $ajax = async ({
@@ -60,26 +60,27 @@ const $ajax = async ({
   success,
   failed
 }: ajax) => {
-  return await fetch(url, {
-    method: type,
-    body: data,
-    headers,
-  })
-    .then(res => {
-      switch (dataType) {
-        case 'text':
-          return res.text()
+  try {
+    const res = await fetch(url, {
+      method: type,
+      body: data,
+      headers,
+    });
 
-        case 'json':
-          return res.json()
-
-        // binary
-        default:
-          return res.blob()
-      }
-    })
-    .then(result => success(result))
-    .catch(error => failed(error));
+    switch (dataType) {
+      case 'text':
+        success(await res.text());
+        break;
+      case 'json':
+        success(await res.json());
+        break;
+      default:
+        success(await res.blob());
+        break;
+    }
+  } catch (err) {
+    failed(err);
+  }
 };
 
 // fade effects
