@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <Layout
       title="home"
-      description="modular javasctipt library <head />">
+      description="modular javasctipt library">
       <HomepageHeader />
     </Layout>
   );

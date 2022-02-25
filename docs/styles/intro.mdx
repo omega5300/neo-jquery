@@ -5,30 +5,36 @@ in neo-jquery now adds core styles module inspired dorian designs videos
 ## using
 
 ``` html
-<link rel="stylesheet" href="https://unpkg.com/browse/neo-jquery@1.0.278/css/neo-jquery.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neo-jquery/css/pin-layout.css" />
 ```
 
 ## layout class
 
 ``` html
 <section class="layout">
-  <header>...</header>
-  <article>hello world</article>
-  <footer>..</footer>
+  <header class="header">...</header>
+  <article class="content">hello world</article>
+  <footer class="footer">..</footer>
 </section>
 ```
 
-<section style={{
-  display: 'grid',
-  minHeight: '100vh',
-  gridTemplateRows: 'auto 1fr auto'
-}}>
-      <header style={{background: '#000', color: '#fff'}}>
-        <h2>example example</h2>  
-      </header>
-      <article style={{background: '#0f0',}}>hello world</article>
-      <footer style={{background: '#000', color: '#fff'}}>example footer</footer>
-</section>
+<iframe
+  height={300}
+  style={{ width: "100%" }}
+  scrolling="no"
+  title="layout"
+  src="https://codepen.io/omega5300/embed/mdqjKaM?default-tab=result&theme-id=dark"
+  frameBorder="no"
+  loading="lazy"
+  allowTransparency="true"
+  allowFullScreen="true"
+>
+  See the Pen &lt;a href="https://codepen.io/omega5300/pen/mdqjKaM"&gt;
+  layout&lt;/a&gt; by julian cordoba (&lt;a
+  href="https://codepen.io/omega5300"&gt;@omega5300&lt;/a&gt;) on &lt;a
+  href="https://codepen.io"&gt;CodePen&lt;/a&gt;.
+</iframe>
+
 
 ## pinterest layout
 
@@ -87,67 +93,19 @@ in neo-jquery now adds core styles module inspired dorian designs videos
 </section>
 ```
 
-export const styles = {
- pinLaoyut: {
-  columns: '5 320px',
-  columnGap: '.5em'
-},
-pinLaoyutImg: {
-  display: 'block',
-  maxWidth: '100%',
-  marginBottom: '.5em'
-}
-}
-
-<section style={styles.pinLaoyut}>
-  <img 
-      src={require('./angele-kamp-uXzkLmnZ-d8-unsplash.jpg').default}
-      alt="example1" 
-      style={styles.pinLaoyutImg}
-  />
-  <img 
-      src={require('./boat-4899802_1920.jpg').default}
-      alt="example2" 
-      style={styles.pinLaoyutImg}
-  />
-  <img 
-      src={require('./dimitry-b-Nj43Yu4QW9E-unsplash.jpg').default}
-      alt="example3" 
-      style={styles.pinLaoyutImg}
-  />
-  <img 
-      src={require('./julian-silverman-fLji1fIQs6c-unsplash.jpg').default} 
-      alt="example4" 
-      style={styles.pinLaoyutImg}
-  />
-  <img 
-      src={require('./julian-silverman-GkVWxzR6wec-unsplash.jpg').default} 
-      alt="example5" 
-      style={styles.pinLaoyutImg}
-  />
-  <img 
-      src={require('./tezos-y8wjQZ9XP4A-unsplash.jpg').default}
-      alt="example6" 
-      style={styles.pinLaoyutImg}
-  />
-  <img 
-      src={require('./zieben-vh-kEmY4CURQfA-unsplash.jpg').default}
-      alt="example7" 
-      style={styles.pinLaoyutImg}
-  />
-  <img 
-      src={require('./angele-kamp-lvnYKrVyW14-unsplash.jpg').default} 
-      alt="example8" 
-      style={styles.pinLaoyutImg}
-  />
-  <img 
-      src={require('./tezos-urt6J6IK0yk-unsplash.jpg').default} 
-      alt="example8" 
-      style={styles.pinLaoyutImg}
-  />
-  <img 
-      src={require('./tom-hills-sS3V2TnN0pc-unsplash.jpg').default} 
-      alt="example10" 
-      style={styles.pinLaoyutImg}
-  />
-</section>
+<iframe
+  height={300}
+  style={{ width: "100%" }}
+  scrolling="no"
+  title="pin layout"
+  src="https://codepen.io/omega5300/embed/oNoMyyL?default-tab=result&theme-id=dark"
+  frameBorder="no"
+  loading="lazy"
+  allowTransparency="true"
+  allowFullScreen="true"
+>
+  See the Pen &lt;a href="https://codepen.io/omega5300/pen/oNoMyyL"&gt; pin
+  layout&lt;/a&gt; by julian cordoba (&lt;a
+  href="https://codepen.io/omega5300"&gt;@omega5300&lt;/a&gt;) on &lt;a
+  href="https://codepen.io"&gt;CodePen&lt;/a&gt;.
+</iframe>

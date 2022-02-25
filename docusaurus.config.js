@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'neo-jquery',
   tagline: 'modular javasctipt library',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://neo-jquery.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -21,17 +21,6 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -52,7 +41,7 @@ const config = {
             label: 'docs',
           },
           {
-            href: 'https://github.com/omega5300/neo-jquery-docs',
+            href: 'https://github.com/omega5300/neo-jquery/tree/docs',
             label: 'GitHub',
             position: 'right',
           },
