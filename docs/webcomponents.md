@@ -29,6 +29,12 @@ import 'https://cdn.jsdelivr.net/npm/neo-jquery/components/modalImage.js'
 
 ### browser compatibility
 
+| firefox | chrome | opera | edge | safari |
+| --- | --- | --- | --- | --- |
+| stable version 98+ | stable version 67+ | stable version 64+ | stable in version 79+ | parcial support 10.1-15.4 and tp versions |
+| for dialog element enabling dom.dialog_element.enabled in about:config | parcial support in versions 54-66 | parcial support in versions 54-66 | not compatibility in edge legacy | parcial support in versions 3.1-10 |
+
+> note: only browser compatibility with html element dialog
 
 ## accordion
 
@@ -70,3 +76,10 @@ import 'https://cdn.jsdelivr.net/npm/neo-jquery/components/accordion.js'
 ```
 
 ### browser compatibility
+
+| firefox | chrome | opera | edge | safari |
+| --- | --- | --- | --- | --- |
+| stable 63+ | stable version 67+ | stable version 64+ | stable in version 79+ | parcial support 10.1-15.4 and tp versions |
+
+
+> note: version n+ example 45+ is version 45 and/or higher 
