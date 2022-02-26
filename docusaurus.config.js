@@ -13,8 +13,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'stack-analyze', // Usually your GitHub org/user name.
+  projectName: 'neo-jquery', // Usually your repo name.
 
   presets: [
     [
@@ -27,10 +27,48 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+      [
+        '@docusaurus/plugin-sitemap',
+        {
+          changefreq: 'weekly',
+          priority: 0.5,
+        },
+      ],
+      [
+        '@docusaurus/plugin-pwa',
+        {
+          debug: true,
+          offlineModeActivationStrategies: [
+            'appInstalled',
+            'standalone',
+            'queryString',
+          ],
+          pwaHead: [
+            {
+              tagName: 'link',
+              rel: 'icon',
+              href: '/img/docusaurus.png',
+            },
+            {
+              tagName: 'link',
+              rel: 'manifest',
+              href: '/manifest.json', // your PWA manifest
+            },
+            {
+              tagName: 'meta',
+              name: 'theme-color',
+              content: 'rgb(37, 194, 160)',
+            },
+          ],
+        },
+      ]
+    ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [{name: 'keywords', content: 'neo-jquery, js library, stack-analyze, jquery modern'}],
       navbar: {
         title: 'neo-jquery',
         items: [
