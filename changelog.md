@@ -1,5 +1,11 @@
 # changelog
 
+## version 1.0.5
+- add toast function extract stack-analyze desktop 5 higher
+- change frontend scraping link change php to node
+- reorder styles
+- rewrite some easter eggs
+
 ## version 1.0.4
 - add web components:
   - accordion

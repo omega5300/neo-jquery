@@ -1,3 +1,4 @@
+// recommend using font awesome in external css for link to web component
 const links = [
   {
     url: 'https://cursos.doriandesings.com/',
@@ -124,8 +125,10 @@ class DorianDesings extends HTMLElement {
       menuItem.append(menuItemLink);
       menu.append(menuItem);
     });
+    
+    navbar.append(menu);
 
-    shadowRoot.append(fontAwesome, internalStyles, navbar, menu);
+    shadowRoot.append(fontAwesome, internalStyles, navbar);
   }
 }
 

@@ -12,15 +12,16 @@ type ajax = {
 const styles: HTMLStyleElement = document.createElement('style');
 
 styles.textContent = `
+  .show, .hide {
+    transition: opacity 400ms;
+  }
+  
   .show {
     opacity: 1;
   }
+  
   .hide {
     opacity: 0;
-  }
-  
-  .show, .hide {
-    transition: opacity 400ms;
   }
 `;
 
@@ -100,3 +101,15 @@ const fadeOut = (el: HTMLElement | Element) => {
 const hide = (el: any) => (el.style.display = 'none');
 
 const show = (el: any) => (el.style.display = '');
+
+const $toast = (msg: string, classAlert: string, time: number) => {
+  const toast = $createElement('div');
+  toast.textContent = msg;
+  toast.classList.add(classAlert, 'show');
+  $body.prepend(toast);
+
+  setTimeout(() => {
+    fadeOut(toast);
+    $body.removeChild(toast);
+  }, time);
+};
