@@ -1,7 +1,7 @@
 const $scraping = async ({ url, web, failed }) => {
     const parser = new DOMParser();
     try {
-        const res = await fetch(`http://neo-jquery.000webhostapp.com/app.php?web=${url}`);
+        const res = await fetch(`https://api-scraping.vercel.app/api/scraping?url=${url}`);
         const data = await res.text();
         const page = parser.parseFromString(data, 'text/html');
         web(page);

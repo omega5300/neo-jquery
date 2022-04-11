@@ -19,4 +19,5 @@ declare const fadeIn: (el: HTMLElement | Element) => void;
 declare const fadeOut: (el: HTMLElement | Element) => void;
 declare const hide: (el: any) => string;
 declare const show: (el: any) => string;
-export { $body, $selector, $selectorAll, $id, $date, $getJSON, $ajax, $createElement, fadeIn, fadeOut, hide, show };
+declare const $toast: (msg: string, classAlert: string, time: number) => void;
+export { $body, $selector, $selectorAll, $id, $date, $getJSON, $ajax, $createElement, $toast, fadeIn, fadeOut, hide, show, };

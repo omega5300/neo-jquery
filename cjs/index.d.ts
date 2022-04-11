@@ -16,6 +16,7 @@ declare const _default: {
     $getJSON: (url: string, callback: (param: any) => void) => Promise<void>;
     $ajax: ({ url, type, data, headers, dataType, success, failed }: ajax) => Promise<void>;
     $createElement: (el: string) => HTMLElement;
+    $toast: (msg: string, classAlert: string, time: number) => void;
     fadeIn: (el: Element | HTMLElement) => void;
     fadeOut: (el: Element | HTMLElement) => void;
     hide: (el: any) => string;

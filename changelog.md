@@ -5,6 +5,8 @@
 - change frontend scraping link change php to node
 - reorder styles
 - rewrite some easter eggs
+### patch version 1.0.55
+- add new features not present except new easter-egg
 
 ## version 1.0.4
 - add web components:

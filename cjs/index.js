@@ -1,15 +1,16 @@
 // dinamic styles
 const styles = document.createElement('style');
 styles.textContent = `
+  .show, .hide {
+    transition: opacity 400ms;
+  }
+  
   .show {
     opacity: 1;
   }
+  
   .hide {
     opacity: 0;
-  }
-  
-  .show, .hide {
-    transition: opacity 400ms;
   }
 `;
 document.head.appendChild(styles);
@@ -27,29 +28,31 @@ const $id = (el) => document.getElementById(el);
 const $date = (date = null) => new Date(date);
 // ajax
 const $getJSON = async (url, callback) => {
-    return await fetch(url)
-        .then(res => res.json())
-        .then(data => callback(data));
+    const res = await fetch(url);
+    callback(await res.json());
 };
 const $ajax = async ({ url, type, data, headers, dataType, success, failed }) => {
-    return await fetch(url, {
-        method: type,
-        body: data,
-        headers,
-    })
-        .then(res => {
+    try {
+        const res = await fetch(url, {
+            method: type,
+            body: data,
+            headers,
+        });
         switch (dataType) {
             case 'text':
-                return res.text();
+                success(await res.text());
+                break;
             case 'json':
-                return res.json();
-            // binary
+                success(await res.json());
+                break;
             default:
-                return res.blob();
+                success(await res.blob());
+                break;
         }
-    })
-        .then(result => success(result))
-        .catch(error => failed(error));
+    }
+    catch (err) {
+        failed(err);
+    }
 };
 // fade effects
 const fadeIn = (el) => {
@@ -65,6 +68,16 @@ const fadeOut = (el) => {
 // show and hidden elements
 const hide = (el) => (el.style.display = 'none');
 const show = (el) => (el.style.display = '');
+const $toast = (msg, classAlert, time) => {
+    const toast = $createElement('div');
+    toast.textContent = msg;
+    toast.classList.add(classAlert, 'show');
+    $body.prepend(toast);
+    setTimeout(() => {
+        fadeOut(toast);
+        $body.removeChild(toast);
+    }, time);
+};
 module.exports = {
     $body,
     $selector,
@@ -74,8 +87,9 @@ module.exports = {
     $getJSON,
     $ajax,
     $createElement,
+    $toast,
     fadeIn,
     fadeOut,
     hide,
-    show
+    show,
 };
