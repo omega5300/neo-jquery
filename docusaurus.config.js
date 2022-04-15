@@ -69,7 +69,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      metadata: [{name: 'keywords', content: 'neo-jquery, js library, stack-analyze, jquery modern, jquery alternative, jquery'}],
+      metadata: [
+        {name: 'keywords', content: 'neo-jquery, js library, stack-analyze, jquery modern, jquery alternative, jquery'},
+        {name: 'robots', content: 'index, follow'}
+      ],
       navbar: {
         title: 'neo-jquery',
         items: [
