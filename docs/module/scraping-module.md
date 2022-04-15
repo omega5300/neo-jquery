@@ -1,5 +1,8 @@
 ---
 sidebar_position: 1
+title: frontend scraping npm docs
+description: frontend scraping neo-jquery docs as modules
+keywords: [neo-jquery npm, frontend scraping modules]
 ---
 
 # scraping module getting started

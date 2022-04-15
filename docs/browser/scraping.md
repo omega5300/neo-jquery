@@ -1,3 +1,9 @@
+---
+title: frontend scraping docs
+description: frontend scraping neo-jquery docs for browser
+keywords: [neo-jquery browser, frontend scraping]
+---
+
 # frontend scraping
 
 this module called frontend scraping is a relatively new module that allows us to use web scraping for the client side as we do in the backend.

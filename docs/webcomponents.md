@@ -1,3 +1,10 @@
+---
+sidebar_position: 1
+title: webcomponents docs
+description: neo-jquery webcomponents docs
+keywords: [neo-jquery webcomponents, neo-jquery npm]
+---
+
 # webcomponents
 
 new modules add in version 1.0.4 as universal using in:

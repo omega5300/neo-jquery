@@ -1,5 +1,8 @@
 ---
 sidebar_position: 1
+title: module docs
+description: core neo-jquery docs as npm module
+keywords: [neo-jquery module, neo-jquery npm]
 ---
 
 # module getting started
@@ -204,3 +207,18 @@ show(main);
 | ----------- | ----------- |
 | param: el | any |
 | return | string |
+
+## $toast method
+
+new function add version 1.0.5 extract from stack-analyze desktop 5.0.0 higher
+
+``` js
+$toast('hello user', 'alert', 5000)
+```
+
+| desc | type |
+| ----------- | ----------- |
+| param: msg | string |
+| param: classAlert | string |
+| param: time | number |
+| return | void |

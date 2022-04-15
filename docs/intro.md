@@ -1,5 +1,8 @@
 ---
 sidebar_position: 1
+title: getting started
+description: intro for the library neo-jquery
+keywords: [neo-jquery getting statted, neo-jquery npm]
 ---
 
 # Getting Started

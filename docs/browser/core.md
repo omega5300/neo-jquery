@@ -1,5 +1,8 @@
 ---
 sidebar_position: 1
+title: browser docs
+description: core neo-jquery docs for browser
+keywords: [neo-jquery browser]
 ---
 
 # core browser
@@ -87,4 +90,6 @@ $ajax({
 /* create elements */
 $createElement('p')
 const parragram = $createElement('p')
+
+$toast('hello user', 'alert', 5000)
 ```
