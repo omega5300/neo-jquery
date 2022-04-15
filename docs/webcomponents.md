@@ -18,7 +18,7 @@ for using the webcomponents modal image with html dialog tag form in js
 
 ``` html
 <!-- modal Image -->
-<modal-image url="/example.jp" alt="hello"></modal-image>
+<modal-image url="/example.jpg" alt="hello"></modal-image>
 <!-- script -->
 <script src="https://cdn.jsdelivr.net/npm/neo-jquery/components/modalImage.js"></script>
 ```

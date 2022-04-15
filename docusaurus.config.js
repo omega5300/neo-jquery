@@ -10,10 +10,11 @@ const config = {
   tagline: 'modular javasctipt library',
   url: 'https://neo-jquery.vercel.app',
   baseUrl: '/',
+  noIndex: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'stack-analyze', // Usually your GitHub org/user name.
+  organizationName: 'omega5300', // Usually your GitHub org/user name.
   projectName: 'neo-jquery', // Usually your repo name.
 
   presets: [
@@ -68,7 +69,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      metadata: [{name: 'keywords', content: 'neo-jquery, js library, stack-analyze, jquery modern'}],
+      metadata: [{name: 'keywords', content: 'neo-jquery, js library, stack-analyze, jquery modern, jquery alternative, jquery'}],
       navbar: {
         title: 'neo-jquery',
         items: [
