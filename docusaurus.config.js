@@ -15,6 +15,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'omega5300', // Usually your GitHub org/user name.
+  trailingSlash: false,
   projectName: 'neo-jquery', // Usually your repo name.
 
   presets: [
@@ -32,6 +33,7 @@ const config = {
       [
         '@docusaurus/plugin-sitemap',
         {
+          id: 'sitemap-params',
           changefreq: 'weekly',
           priority: 0.5,
         },
@@ -39,6 +41,7 @@ const config = {
       [
         '@docusaurus/plugin-pwa',
         {
+          id: 'pwa-params',
           debug: true,
           offlineModeActivationStrategies: [
             'appInstalled',
