@@ -32,7 +32,7 @@ const { $id } = require('neo-jquery/mjs'); // destructuring
 in javascript browser is easy size less 3KB
 
 ``` html
-<script src="https://unpkg.com/neo-jquery@1.0.3/browser/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/neo-jquery/browser/index.js"></script>
 ```
 
 ## browser support

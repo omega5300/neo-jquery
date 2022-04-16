@@ -12,7 +12,7 @@ this module is exclusive for the latest versions of Internet explorer and browse
 
 ``` html
 <!--legacy module-->
-<script src="https://unpkg.com/neo-jquery@1.0.3/browser/legacy.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/neo-jquery/browser/legacy.js"></script>
 ```
 
 ``` js

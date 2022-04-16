@@ -15,7 +15,7 @@ it has a size of almost 2KB which is much smaller than jQuery and beneficial for
 
 ``` html
 <!--main file-->
-<script src="https://unpkg.com/neo-jquery@1.0.3/browser/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/neo-jquery/browser/index.js"></script>
 ```
 
 ``` js

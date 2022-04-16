@@ -14,7 +14,7 @@ use a php file with a request parameter whether to use get or post weighs less t
 
 ``` html
 <!--main file-->
-<script src="https://unpkg.com/neo-jquery@1.0.3/browser/scraping.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/neo-jquery/browser/scraping.js"></script>
 ```
 
 ``` js
