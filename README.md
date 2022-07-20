@@ -11,6 +11,10 @@ el uso puede ser por medio de node o el navegador.
 npm i neo-jquery
 ```
 
+``` js
+<script src="https://cdn.jsdelivr.net/npm/neo-jquery"></script>
+```
+
 info y docs
 - [changelog](/changelog.md)
 - [docs](https://neo-jquery.vercel.app)

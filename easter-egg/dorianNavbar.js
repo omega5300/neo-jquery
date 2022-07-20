@@ -33,13 +33,17 @@ const links = [
 class DorianDesings extends HTMLElement {
   constructor() {
     super();
+    const fontAwesome = document.createElement('link');
+    fontAwesome.rel = 'stylesheet';
+    fontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css';
+
+    document.head.append(fontAwesome);
   }
 
   connectedCallback() {
     const shadowRoot = this.attachShadow({ mode: 'open' });
 
     // elements
-    const fontAwesome = document.createElement('link');
     const internalStyles = document.createElement('style');
     const navbar = document.createElement('nav');
     const menu = document.createElement('ul');
@@ -106,9 +110,6 @@ class DorianDesings extends HTMLElement {
 
     menu.classList.add('menu');
 
-    fontAwesome.rel = 'stylesheet';
-    fontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css';
-
     links.forEach((link, i) => {
       const menuItem = document.createElement('li');
       const menuItemLink = document.createElement('a');
@@ -128,7 +129,7 @@ class DorianDesings extends HTMLElement {
     
     navbar.append(menu);
 
-    shadowRoot.append(fontAwesome, internalStyles, navbar);
+    shadowRoot.append(internalStyles, navbar);
   }
 }
 

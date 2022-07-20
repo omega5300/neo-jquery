@@ -7,7 +7,8 @@
   },
   "files": [
     "./src/browser/index.ts",
-    "./src/browser/scraping.ts"
+    "./src/browser/scraping.ts",
+    "./src/browser/intl.ts"
   ],
   "exclude": [ "./src/esm", "./src/cjs" ],
   "extends": "./tsconfig.json"

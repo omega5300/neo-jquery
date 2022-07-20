@@ -1,6 +1,6 @@
 {
   "name": "neo-jquery",
-  "version": "1.0.55",
+  "version": "1.0.6",
   "description": "libreria de javascript para el uso de DOM y ajax",
   "browser": "./browser/index.js",
   "exports": {
@@ -53,6 +53,6 @@
   },
   "homepage": "https://neo-jquery.vercel.app",
   "devDependencies": {
-    "typescript": "^4.5.5"
+    "typescript": "^4.7.4"
   }
 }
