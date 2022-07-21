@@ -1,5 +1,5 @@
 ---
-title: legacy module docs
+title: legacy module
 description: legacy neo-jquery module docs
 keywords: [neo-jquery ie, neo-jquery legacy]
 ---
@@ -7,6 +7,10 @@ keywords: [neo-jquery ie, neo-jquery legacy]
 # legacy module
 
 this module is exclusive for the latest versions of Internet explorer and browsers that support es5 Internet explorer 9 or lower is not compatible is similar to the main module with a small difference this module weighs 2.2KB what is essential for DOM and ajax management.
+
+:::danger
+this module is no recommend for browser compatibility with es6 legacy module is remove the version 1.0.7 or 12/2022
+:::
 
 ## using legacy module
 
@@ -23,7 +27,7 @@ hello.textContent = 'hello world'
 ```
 
 :::tip
-this using module is $..{function} example $..body or $..id('hi')
+this using module is $.{function} example $.body or $.id('hi')
 :::
 
 ## function and selectors

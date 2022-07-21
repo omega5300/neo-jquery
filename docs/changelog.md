@@ -7,6 +7,10 @@ keywords: [neo-jquery module, neo-jquery npm, neo-jquery versions]
 
 # changelog
 
+## version 1.0.6
+- add new module intl
+- new easter-egg for swifties
+
 ## version 1.0.5
 - add toast function extract stack-analyze desktop 5 higher
 - change frontend scraping link change php to node

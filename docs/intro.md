@@ -40,4 +40,6 @@ in javascript browser is easy size less 3KB
 - legacy module *not include frontend scraping*: last IE versions
 - core module: all browsers except IE
 - scraping module: all browsers except IE
+- intl module: all browsers except IE
+- webcomponents: all browsers except IE
 - css stylesheet file: all browsers except IE

@@ -1,13 +1,26 @@
 ---
 sidebar_position: 1
-title: frontend scraping npm docs
+title: frontend scraping
 description: frontend scraping neo-jquery docs as modules
 keywords: [neo-jquery npm, frontend scraping modules]
 ---
 
-# scraping module getting started
+# scraping module
 
-scraping module using micro php backend code.
+this module called frontend scraping is a relatively new module that allows us to use web scraping for the client side as we do in the backend.
+
+use a php file with a request parameter whether to use get or post weighs less than 1KB
+
+scraping module using serverless node backend code.
+
+## browser
+
+``` html
+<!--main file-->
+<script src="https://cdn.jsdelivr.net/npm/neo-jquery/browser/scraping.js"></script>
+```
+
+## module
 
 ``` js
 /* CJS */
@@ -48,3 +61,5 @@ $scraping({
 | url | string |
 | web | (param: Document) =&#62; void |
 | failed | (param: any) =&#62; void |
+
+> similar to $ajax only DOM data

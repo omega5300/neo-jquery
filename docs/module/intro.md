@@ -7,7 +7,29 @@ keywords: [neo-jquery module, neo-jquery npm]
 
 # module getting started
 
-neo-jquery using as node frontend module CJS and ESM import mode
+neo-jquery using as node frontend module CJS and ESM import mode.
+
+this module is the main one to use the concepts of DOM, ES6+ and to know the basics of ajax.
+
+## using neo-jquery
+
+it has a size of almost 2KB which is much smaller than jQuery and beneficial for the correct functioning it is compatible with webpack and cjs electron and indepent script for browser.
+
+### browser
+
+``` html
+<!--main file-->
+<script src="https://cdn.jsdelivr.net/npm/neo-jquery/browser/index.js"></script>
+```
+
+``` js
+// id
+const hello = $id('hello-world')
+
+hello.textContent = 'hello world'
+```
+
+### module	
 
 ``` js
 /* CJS */
@@ -30,7 +52,9 @@ const { $id } = await import('neo-jquery/mjs')
 
 > dynamic import is compatible with neo-jquery CJS
 
-## $id function
+## functions
+
+### $id function
 
 ``` js
 $id('hello-world');
@@ -42,7 +66,7 @@ $id('hello-world');
 | return | HTMLElement |
 
 
-## $selector function
+### $selector function
 
 ``` js
 $selector('hello-world');
@@ -53,7 +77,7 @@ $selector('hello-world');
 | param: el | string |
 | return | Element &#124; null |
 
-## $selectorAll function
+### $selectorAll function
 
 ``` js
 $selectorAll('hello-world');
@@ -64,7 +88,7 @@ $selectorAll('hello-world');
 | param: el | string |
 | return | NodeListOf&#60;Element&#62; |
 
-## $createElement function
+### $createElement function
 
 ``` js
 $createElement('h2');
@@ -75,7 +99,7 @@ $createElement('h2');
 | param: el | string |
 | return | HTMLElement |
 
-## $body function
+### $body function
 
 ``` js
 $body.textContent = 'hello world'
@@ -85,7 +109,7 @@ $body.textContent = 'hello world'
 | ----------- |
 | HTMLElement |
 
-## $date function
+### $date function
 
 ``` js
 $date() // param null
@@ -97,7 +121,7 @@ $data('2021-12-03') // with param
 | param: el | null &#124; any |
 | return | Date |
 
-## $getJSON function
+### $getJSON function
 
 ``` js
 $getJSON('http://jsonplaceholder.typicode.com/users', (data) => {
@@ -111,7 +135,7 @@ $getJSON('http://jsonplaceholder.typicode.com/users', (data) => {
 | param: callback | (param: any) =&#62; void |
 | return | Promise&#60;void&#62; |
 
-## $ajax function
+### $ajax function
 
 ``` js
 $ajax({
@@ -144,7 +168,7 @@ $ajax({
 | params: { url, type, data, headers, dataType, success, failed } | ajax |
 | return | Promise&#60;void&#62; |
 
-### ajax type params
+#### ajax type params
 
 | propiety | type |
 | ----------- | ----------- |
@@ -156,7 +180,7 @@ $ajax({
 | success (required) | (param: any) =&#62; void |
 | failed (required) | (param: any) =&#62; void |
 
-## fadeIn function
+### fadeIn function
 
 ``` js
 const main = $selector('h1')
@@ -169,7 +193,7 @@ fadeIn(main);
 | param: el | HTMLElement &#124; Element |
 | return | void |
 
-## fadeOut function
+### fadeOut function
 
 ``` js
 const main = $selector('h1')
@@ -182,7 +206,7 @@ fadeOut(main);
 | param: el | HTMLElement &#124; Element |
 | return | void |
 
-## hide function
+### hide function
 
 ``` js
 const main = $selector('h1')
@@ -195,7 +219,7 @@ hide(main);
 | param: el | any |
 | return | string |
 
-## show function
+### show function
 
 ``` js
 const main = $selector('h1')
@@ -208,7 +232,7 @@ show(main);
 | param: el | any |
 | return | string |
 
-## $toast method
+### $toast method
 
 new function add version 1.0.5 extract from stack-analyze desktop 5.0.0 higher
 
