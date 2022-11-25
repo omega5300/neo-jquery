@@ -17,8 +17,8 @@
     "./cjs/intl": "./cjs/intl.js",
     "./mjs": "./mjs/index.js",
     "./mjs/scraping": "./mjs/scraping.js",
-    "./mjs/intl": "./mjs/intl.js",
-},
+    "./mjs/intl": "./mjs/intl.js"
+    },
   "typesVersions": {
     "*": {
       "/cjs/index.d.ts": [ "./cjs/index.d.ts" ],
