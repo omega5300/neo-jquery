@@ -1,6 +1,6 @@
 {
   "name": "neo-jquery",
-  "version": "1.0.7",
+  "version": "1.0.71",
   "description": "libreria de javascript para el uso de DOM y ajax",
   "browser": "./browser/index.js",
   "exports": {
@@ -8,10 +8,10 @@
     "./cjs": "./cjs/index.js",
     "./cjs/scraping": "./cjs/scraping.js",
     "./cjs/intl": "./cjs/intl.js",
-    "./mjs": "./mjs/index.js",
-    "./mjs/scraping": "./mjs/scraping.js",
-    "./mjs/intl": "./mjs/intl.js",
-    "./utils/params": "./utils/params.js"
+    "./mjs/index.js": "./mjs/index.js",
+    "./mjs/scraping.js": "./mjs/scraping.js",
+    "./mjs/intl.js": "./mjs/intl.js",
+    "./utils/params.js": "./utils/params.js"
   },
   "scripts": {
     "ts-node": "tsc -p ./tsconfig-node.json",
