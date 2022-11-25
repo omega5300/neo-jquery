@@ -1,18 +1,8 @@
 {
   "name": "neo-jquery",
-  "version": "1.0.71",
+  "version": "1.0.72",
   "description": "libreria de javascript para el uso de DOM y ajax",
   "browser": "./browser/index.js",
-  "exports": {
-    ".": "./cjs/index.js",
-    "./cjs": "./cjs/index.js",
-    "./cjs/scraping": "./cjs/scraping.js",
-    "./cjs/intl": "./cjs/intl.js",
-    "./mjs/index.js": "./mjs/index.js",
-    "./mjs/scraping.js": "./mjs/scraping.js",
-    "./mjs/intl.js": "./mjs/intl.js",
-    "./utils/params.js": "./utils/params.js"
-  },
   "scripts": {
     "ts-node": "tsc -p ./tsconfig-node.json",
     "ts-esm": "tsc -p ./tsconfig-esm.json",
@@ -23,18 +13,10 @@
   },
   "typesVersions": {
     "*": {
-      "/cjs/index.d.ts": [
-        "./cjs/index.d.ts"
-      ],
-      "/mjs/index.d.ts": [
-        "./mjs/index.d.ts"
-      ],
-      "/cjs/*": [
-        "./cjs/*.d.ts"
-      ],
-      "/mjs/*": [
-        "./mjs/*.d.ts"
-      ],
+      "/cjs/index.d.ts": [ "./cjs/index.d.ts" ],
+      "/mjs/index.d.ts": [ "./mjs/index.d.ts" ],
+      "/cjs/*": [ "./cjs/*.d.ts" ],
+      "/mjs/*": [ "./mjs/*.d.ts" ],
       "/utils/*": ["./utils/*.d.ts"]
     }
   },
