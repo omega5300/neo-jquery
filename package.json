@@ -1,6 +1,6 @@
 {
   "name": "neo-jquery",
-  "version": "1.0.73",
+  "version": "1.0.74",
   "description": "libreria de javascript para el uso de DOM y ajax",
   "browser": "./browser/index.js",
   "scripts": {
@@ -8,26 +8,23 @@
     "ts-esm": "tsc -p ./tsconfig-esm.json",
     "ts-browser": "tsc -p ./tsconfig-browser.json",
     "ts-wc": "tsc -p ./tsconfig-wc.json",
-    "ts-utils": "tsc -p ./tsconfig.utils.json",
-    "build": "npm run ts-node && npm run ts-esm && npm run ts-browser && npm run ts-utils"
+    "build": "npm run ts-node && npm run ts-esm && npm run ts-browser"
   },
   "exports": {
-".": "./cjs/index.js",
-"./cjs": "./cjs/index.js",
-"./cjs/scraping": "./cjs/scraping.js",
-"./cjs/intl": "./cjs/intl.js",
-"./mjs": "./mjs/index.js",
-"./mjs/scraping": "./mjs/scraping.js",
-"./mjs/intl": "./mjs/intl.js",
-"./utils/params": "./utils/params.js"
+    ".": "./cjs/index.js",
+    "./cjs": "./cjs/index.js",
+    "./cjs/scraping": "./cjs/scraping.js",
+    "./cjs/intl": "./cjs/intl.js",
+    "./mjs": "./mjs/index.js",
+    "./mjs/scraping": "./mjs/scraping.js",
+    "./mjs/intl": "./mjs/intl.js",
 },
   "typesVersions": {
     "*": {
       "/cjs/index.d.ts": [ "./cjs/index.d.ts" ],
       "/mjs/index.d.ts": [ "./mjs/index.d.ts" ],
       "/cjs/*": [ "./cjs/*.d.ts" ],
-      "/mjs/*": [ "./mjs/*.d.ts" ],
-      "/utils/*": ["./utils/*.d.ts"]
+      "/mjs/*": [ "./mjs/*.d.ts" ]
     }
   },
   "keywords": [
