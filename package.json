@@ -1,21 +1,25 @@
 {
   "name": "neo-jquery",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "libreria de javascript para el uso de DOM y ajax",
   "browser": "./browser/index.js",
   "exports": {
     ".": "./cjs/index.js",
     "./cjs": "./cjs/index.js",
     "./cjs/scraping": "./cjs/scraping.js",
+    "./cjs/intl": "./cjs/intl.js",
     "./mjs": "./mjs/index.js",
-    "./mjs/scraping": "./mjs/scraping.js"
+    "./mjs/scraping": "./mjs/scraping.js",
+    "./mjs/intl": "./mjs/intl.js",
+    "./utils/params": "./utils/params.js"
   },
   "scripts": {
     "ts-node": "tsc -p ./tsconfig-node.json",
     "ts-esm": "tsc -p ./tsconfig-esm.json",
     "ts-browser": "tsc -p ./tsconfig-browser.json",
     "ts-wc": "tsc -p ./tsconfig-wc.json",
-    "build": "npm run ts-node && npm run ts-esm && npm run ts-browser"
+    "ts-utils": "tsc -p ./tsconfig.utils.json",
+    "build": "npm run ts-node && npm run ts-esm && npm run ts-browser && npm run ts-utils"
   },
   "typesVersions": {
     "*": {
@@ -30,7 +34,8 @@
       ],
       "/mjs/*": [
         "./mjs/*.d.ts"
-      ]
+      ],
+      "/utils/*": ["./utils/*.d.ts"]
     }
   },
   "keywords": [
@@ -53,6 +58,6 @@
   },
   "homepage": "https://neo-jquery.vercel.app",
   "devDependencies": {
-    "typescript": "^4.7.4"
+    "typescript": "^4.9.3"
   }
 }

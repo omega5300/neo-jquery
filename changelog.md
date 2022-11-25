@@ -1,4 +1,7 @@
 # changelog
+## version 1.0.7
+- remove legacy module (if using IE using the versions 1.0.3 - 1.0.6)
+- new universal module search params (node and browser)
 
 ## version 1.0.6
 - add new module intl
