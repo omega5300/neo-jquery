@@ -9,7 +9,7 @@ keywords: [neo-jquery ie, neo-jquery legacy]
 this module is exclusive for the latest versions of Internet explorer and browsers that support es5 Internet explorer 9 or lower is not compatible is similar to the main module with a small difference this module weighs 2.2KB what is essential for DOM and ajax management.
 
 :::danger
-this module is no recommend for browser compatibility with es6 legacy module is remove the version 1.0.7 or 12/2022
+deprecated if using IE using the version 1.0.3 - 1.0.6
 :::
 
 ## using legacy module

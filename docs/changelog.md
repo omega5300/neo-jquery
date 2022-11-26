@@ -7,6 +7,9 @@ keywords: [neo-jquery module, neo-jquery npm, neo-jquery versions]
 
 # changelog
 
+## version 1.0.7
+- remove legacy module
+
 ## version 1.0.6
 - add new module intl
 - new easter-egg for swifties
