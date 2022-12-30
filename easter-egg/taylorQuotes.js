@@ -5,7 +5,7 @@ class TaylorQuotes extends HTMLElement {
     const fonts = document.createElement("link");
     fonts.rel = "stylesheet";
     fonts.href = 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap';
-    
+
     document.head.append(fonts);
   }
 
@@ -13,7 +13,7 @@ class TaylorQuotes extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: 'closed' });
 
     const styles = document.createElement('style');
-    
+
     styles.textContent = `      
       :host {
         font-family: 'Pacifico', cursive;
@@ -41,23 +41,23 @@ class TaylorQuotes extends HTMLElement {
 
     const quote = document.createElement('q');
     quote.classList.add('quote');
-    
+
     const cite = document.createElement('cite');
     cite.classList.add('cite');
-    
+
     fetch('https://taylorswiftapi.herokuapp.com/get')
       .then(res => res.json())
       .then(data => {
         quote.cite = data.song;
         quote.textContent = data.quote;
-        quote.title = `song: ${data.song}`;	
-        
+        quote.title = `song: ${data.song}`;
+
         cite.textContent = `album: ${data.album}`;
-        
+
         shadowRoot.append(styles, quote, cite);
       })
       .catch(err => {
-       shadowRoot.textContent = err.message 
+        shadowRoot.textContent = err.message
       });
   }
 }

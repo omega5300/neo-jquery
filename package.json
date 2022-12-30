@@ -1,30 +1,48 @@
 {
   "name": "neo-jquery",
-  "version": "1.0.74",
+  "version": "1.0.8",
   "description": "libreria de javascript para el uso de DOM y ajax",
   "browser": "./browser/index.js",
   "scripts": {
-    "ts-node": "tsc -p ./tsconfig-node.json",
+    "ts-electron": "tsc -p ./tsconfig-electron.json",
     "ts-esm": "tsc -p ./tsconfig-esm.json",
     "ts-browser": "tsc -p ./tsconfig-browser.json",
     "ts-wc": "tsc -p ./tsconfig-wc.json",
-    "build": "npm run ts-node && npm run ts-esm && npm run ts-browser"
+    "ts-node": "tsc -p ./tsconfig-node.json",
+    "build": "npm run ts-electron && npm run ts-wc && npm run ts-esm && npm run ts-browser && npm run ts-node"
   },
   "exports": {
-    ".": "./cjs/index.js",
     "./cjs": "./cjs/index.js",
     "./cjs/scraping": "./cjs/scraping.js",
     "./cjs/intl": "./cjs/intl.js",
     "./mjs": "./mjs/index.js",
     "./mjs/scraping": "./mjs/scraping.js",
-    "./mjs/intl": "./mjs/intl.js"
-    },
+    "./mjs/intl": "./mjs/intl.js",
+    "./mjs/params": "./mjs/params.js",
+    "./node": "./node/index.js",
+    "./node/params": "./node/params.js",
+    "./components/*": "./components/*.js"
+  },
+  "import": {
+    "./cjs": "./cjs/index.js",
+    "./cjs/scraping": "./cjs/scraping.js",
+    "./cjs/intl": "./cjs/intl.js",
+    "./mjs": "./mjs/index.js",
+    "./mjs/scraping": "./mjs/scraping.js",
+    "./mjs/intl": "./mjs/intl.js",
+    "./mjs/params": "./mjs/params.js",
+    "./node": "./node/index.js",
+    "./node/params": "./node/params.js",
+    "./components/*": "./components/*.js"
+  },
   "typesVersions": {
     "*": {
-      "/cjs/index.d.ts": [ "./cjs/index.d.ts" ],
-      "/mjs/index.d.ts": [ "./mjs/index.d.ts" ],
-      "/cjs/*": [ "./cjs/*.d.ts" ],
-      "/mjs/*": [ "./mjs/*.d.ts" ]
+      "/cjs/index.d.ts": ["./cjs/index.d.ts"],
+      "/mjs/index.d.ts": ["./mjs/index.d.ts"],
+      "/node/index.d.ts": ["./mjs/index.d.ts"],
+      "/cjs/*": ["./cjs/*.d.ts"],
+      "/mjs/*": ["./mjs/*.d.ts"],
+      "/node/*": ["./node/*.d.ts"]
     }
   },
   "keywords": [
@@ -47,6 +65,7 @@
   },
   "homepage": "https://neo-jquery.vercel.app",
   "devDependencies": {
-    "typescript": "^4.9.3"
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
   }
 }

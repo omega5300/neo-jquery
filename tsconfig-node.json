@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
+    "module": "NodeNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
     "noImplicitUseStrict": true,
-    "outDir": "./cjs",
+    "declaration": true,
+    "outDir": "./node"
   },
-  "files": [
-    "./src/cjs/index.ts",
-    "./src/cjs/scraping.ts",
-    "./src/cjs/intl.ts"
-  ],
-  "exclude": [ "./src/esm", "./src/browser", "./src/utils" ],
+  "files": ["./src/node/index.ts", "./src/node/params.ts"],
+  "exclude": ["./src/cjs", "./src/browser", "./src/esm"],
   "extends": "./tsconfig.json",
+  "ts-node": {
+    "esm": true
+  }
 }

@@ -13,3 +13,5 @@ const $urlParams = ({paramsList, splitparams, paramsNameAppend}: Params) => {
 
   return params;
 };
+
+export { $urlParams }

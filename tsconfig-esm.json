@@ -8,6 +8,7 @@
   "files": [
     "./src/esm/index.ts",
     "./src/esm/scraping.ts",
+    "./src/esm/params.ts",
     "./src/esm/intl.ts"
   ],
   "exclude": [ "./src/cjs", "./src/browser", "./src/utils" ],
