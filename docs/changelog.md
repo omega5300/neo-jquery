@@ -7,6 +7,10 @@ keywords: [neo-jquery module, neo-jquery npm, neo-jquery versions]
 
 # changelog
 
+## version 1.0.8
+- node module ($writeFile)
+- params module in node, esm and browser with esm
+
 ## version 1.0.7
 - remove legacy module
 
