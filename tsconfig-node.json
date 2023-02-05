@@ -8,7 +8,7 @@
     "outDir": "./node"
   },
   "files": ["./src/node/index.ts", "./src/node/params.ts"],
-  "exclude": ["./src/cjs", "./src/browser", "./src/esm"],
+  "exclude": ["./src/core", "./src/browser", "./src/components"],
   "extends": "./tsconfig.json",
   "ts-node": {
     "esm": true

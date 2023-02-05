@@ -3,7 +3,7 @@ type ajax = {
   type?: string;
   data?: any;
   headers?: any;
-  dataType: string;
+  dataType: 'text' | 'json' | 'blob';
   success: (param: any) => void;
   failed: (param: any) => void;
 };
@@ -29,6 +29,9 @@ document.head.appendChild(styles);
 
 // create elements
 const $createElement = (el: string) => document.createElement(el);
+
+// root 
+const $root: HTMLElement = document.documentElement;
 
 // body
 const $body: HTMLElement = document.body;

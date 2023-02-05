@@ -1,7 +1,6 @@
 /node_modules
 /browser
-/cjs
-/mjs
+/core
+/node
 /components
-/utils
 package-lock.json

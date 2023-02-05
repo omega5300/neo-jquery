@@ -9,6 +9,6 @@
     "./src/components/accordion.ts",
     "./src/components/modalImage.ts"
   ],
-  "exclude": [ "./src/esm", "./src/cjs" ],
+  "exclude": [ "./src/core", "./src/node", "./src/browser" ],
   "extends": "./tsconfig.json"
 }

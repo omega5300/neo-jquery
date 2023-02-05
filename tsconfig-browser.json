@@ -10,6 +10,6 @@
     "./src/browser/scraping.ts",
     "./src/browser/intl.ts"
   ],
-  "exclude": [ "./src/esm", "./src/cjs", "./src/utils" ],
+  "exclude": [ "./src/core", "./src/node", "./src/components" ],
   "extends": "./tsconfig.json"
 }

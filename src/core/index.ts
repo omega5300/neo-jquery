@@ -3,7 +3,7 @@ type ajax = {
   type?: string;
   data?: any;
   headers?: any;
-  dataType: string;
+  dataType: 'text' | 'json' | 'blob';
   success: (param: any) => void;
   failed: (param: any) => void;
 };
@@ -15,7 +15,7 @@ styles.textContent = `
   .show, .hide {
     transition: opacity 400ms;
   }
-  
+
   .show {
     opacity: 1;
   }
@@ -29,6 +29,9 @@ document.head.appendChild(styles);
 
 // create elements
 const $createElement = (el: string) => document.createElement(el);
+
+// root 
+const $root: HTMLElement = document.documentElement;
 
 // body
 const $body: HTMLElement = document.body;
@@ -115,7 +118,8 @@ const $toast = (msg: string, classAlert: string, time: number) => {
 };
 
 // exports
-export = {
+export {
+  $root,
   $body,
   $selector,
   $selectorAll,

@@ -1,4 +1,10 @@
 # changelog
+
+## version 1.0.9
+- delete cjs & mjs for combined in one folder called core.
+- add $root in the core module.
+- renove types in $ajax function.
+
 ## version 1.0.8
 - add node modules (writefile)
 - add params module in node and esm; not avaliable in browser
