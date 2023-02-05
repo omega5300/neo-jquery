@@ -33,24 +33,24 @@ hello.textContent = 'hello world'
 
 ``` js
 /* CJS */
-const neoJquery = require('neo-jquery/cjs') // full module
-const { $id } = require('neo-jquery/cjs') // destructuring module
+const neoJquery = require('neo-jquery/core') // full module
+const { $id } = require('neo-jquery/core') // destructuring module
 
 /* ESM */
-import neoJquery from 'neo-jquery/mjs' // full module
-import { $id } from 'neo-jquery/mjs' // destructuring module
+import neoJquery from 'neo-jquery/core' // full module
+import { $id } from 'neo-jquery/core' // destructuring module
 
 /* dynamic import promise */
-import('neo-jquery/mjs')
+import('neo-jquery/core')
   .then(({ $id }) => {
     .....
   })
   
 /* async/await and top level await*/
-const { $id } = await import('neo-jquery/mjs')
+const { $id } = await import('neo-jquery/core')
 ```
 
-> dynamic import is compatible with neo-jquery CJS
+> dynamic import is compatible with CJS
 
 ## functions
 
@@ -98,6 +98,16 @@ $createElement('h2');
 | ----------- | ----------- |
 | param: el | string |
 | return | HTMLElement |
+
+### $root element
+
+``` js
+$root.classList.add('example')
+```
+
+| type |
+| ----------- |
+| HTMLElement |
 
 ### $body function
 
@@ -176,7 +186,7 @@ $ajax({
 | type (optional) | string |
 | data (optional) | any |
 | headers (optional) | any |
-| dataType (required) | string |
+| dataType (required) | 'text' &#124; 'json' &#124; 'blob' |
 | success (required) | (param: any) =&#62; void |
 | failed (required) | (param: any) =&#62; void |
 

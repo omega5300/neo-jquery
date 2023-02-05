@@ -24,13 +24,13 @@ scraping module using serverless node backend code.
 
 ``` js
 /* CJS */
-const { $scraping } = require('neo-jquery/cjs/scraping')
+const { $scraping } = require('neo-jquery/core/scraping')
 
 /* ESM */
-import { $scraping } from 'neo-jquery/mjs/scraping'
+import { $scraping } from 'neo-jquery/core/scraping'
   
 /* async/await and top level await*/
-const { $scraping } = await import('neo-jquery/mjs/scraping')
+const { $scraping } = await import('neo-jquery/core/scraping')
 ```
 
 > dynamic import is compatible with neo-jquery CJS

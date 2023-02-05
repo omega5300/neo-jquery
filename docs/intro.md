@@ -19,17 +19,17 @@ npm i neo-jquery
 
 ``` js
 // using with electron CJS
-const neoJquery = require('neo-jquery/cjs'); // full module
-const { $id } = require('neo-jquery/cjs'); // destructuring
+const neoJquery = require('neo-jquery/core'); // full module
+const { $id } = require('neo-jquery/core'); // destructuring
 
 // es module
-const neoJquery = require('neo-jquery/mjs'); // full module
-const { $id } = require('neo-jquery/mjs'); // destructuring
+import neoJquery from 'neo-jquery/core'; // full module
+import { $id } from 'neo-jquery/core'; // destructuring
 ```
 
 ## browser file
 
-in javascript browser is easy size less 3KB
+in javascript browser is easy size less 4KB
 
 ``` html
 <script src="https://cdn.jsdelivr.net/npm/neo-jquery/browser/index.js"></script>
@@ -43,3 +43,5 @@ in javascript browser is easy size less 3KB
 - intl module: all browsers except IE
 - webcomponents: all browsers except IE
 - css stylesheet file: all browsers except IE
+- params module: all browsers and node except IE note: not avalible browser module
+- node module only in node versions and electron

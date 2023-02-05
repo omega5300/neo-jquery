@@ -7,6 +7,11 @@ keywords: [neo-jquery module, neo-jquery npm, neo-jquery versions]
 
 # changelog
 
+## version 1.0.9
+- delete cjs & mjs for combined in one folder called core.
+- add $root in the core module.
+- renove types in $ajax function.
+
 ## version 1.0.8
 - node module ($writeFile)
 - params module in node, esm and browser with esm

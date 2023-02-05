@@ -16,7 +16,7 @@ deprecated if using IE using the version 1.0.3 - 1.0.6
 
 ``` html
 <!--legacy module-->
-<script src="https://cdn.jsdelivr.net/npm/neo-jquery/browser/legacy.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/neo-jquery@1.0.6/browser/legacy.js"></script>
 ```
 
 ``` js

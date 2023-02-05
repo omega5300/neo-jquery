@@ -19,13 +19,13 @@ intl module is a new neo-jquery module this the the lightest size 1.06KB using t
 
 ``` js
 /* CJS */
-const { $timeago } = require('neo-jquery/cjs/intl')
+const { $timeago } = require('neo-jquery/core/intl')
 
 /* ESM */
-import { $timeago } from 'neo-jquery/mjs/intl'
+import { $timeago } from 'neo-jquery/core/intl'
 
 /* async/await and top level await*/
-const { $timeago } = await import('neo-jquery/mjs/intl')
+const { $timeago } = await import('neo-jquery/core/intl')
 ```
 
 > dynamic import is compatible with neo-jquery CJS

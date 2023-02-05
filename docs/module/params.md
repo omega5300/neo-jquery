@@ -6,18 +6,17 @@ title: params module
 
 new module for neo-jquery using the method URLSearchParams universal in node, esm with/without bundle and browser with esm
 
+``` html
+<script src="https://cdn.jsdelivr.net/npm/neo-jquery/core/params.js"></script>
+```
+
+
 ```js
 // node cjs and electron
 const { $urlParams } = require('neo-jquery/node/params')
 
-// node as esm
+// node as esm and bundler
 import { $urlParams } from 'neo-jquery/node/params'
-
-// esm
-import { $urlParams } 'neo-jquery/mjs/params'
-
-// browser as esm
-import { $urlParams } from 'https://cdn.jsdelivr.net/npm/neo-jquery/mjs/params.js'
 
 $urlParams({
   paramsList: 'example dsdas fgdfgfg',
