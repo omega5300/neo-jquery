@@ -28,7 +28,7 @@ styles.textContent = `
 document.head.appendChild(styles);
 
 // create elements
-const $createElement = (el: string) => document.createElement(el);
+const $createElement = (el: keyof HTMLElementTagNameMap | string) => document.createElement(el);
 
 // root 
 const $root: HTMLElement = document.documentElement;

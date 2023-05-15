@@ -3,13 +3,11 @@
     "module": "NodeNext",
     "esModuleInterop": true,
     "declaration": true,
-    "noImplicitUseStrict": true,
     "outDir": "./core",
   },
   "files": [
     "./src/core/index.ts",
     "./src/core/scraping.ts",
-    "./src/core/params.ts",
     "./src/core/intl.ts"
   ],
   "exclude": [ "./src/node", "./src/browser", "./src/components" ],

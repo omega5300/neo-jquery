@@ -3,7 +3,6 @@
     "module": "NodeNext",
     "moduleResolution": "Node",
     "esModuleInterop": true,
-    "noImplicitUseStrict": true,
     "declaration": true,
     "outDir": "./node"
   },

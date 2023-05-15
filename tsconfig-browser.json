@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "module": "None",
-    "noImplicitUseStrict": true,
     "declaration": false,
     "outDir": "./browser"
   },
