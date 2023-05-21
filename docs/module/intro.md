@@ -96,7 +96,7 @@ $createElement('h2');
 
 | desc | type |
 | ----------- | ----------- |
-| param: el | string |
+| param: el | keyof HTMLElementTagNameMap &#124; string |
 | return | HTMLElement |
 
 ### $root element

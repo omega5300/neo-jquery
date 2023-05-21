@@ -7,6 +7,11 @@ keywords: [neo-jquery module, neo-jquery npm, neo-jquery versions]
 
 # changelog
 
+## version 1.1.0
+- add new component radio-player
+- add types in $createElement
+- add new style retro card
+
 ## version 1.0.9
 - delete cjs & mjs for combined in one folder called core.
 - add $root in the core module.

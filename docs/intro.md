@@ -7,7 +7,7 @@ keywords: [neo-jquery getting statted, neo-jquery npm]
 
 # Getting Started
 
-discover a jquery alternative main module size less 3KB. first npm module using cjs, esm and browser.
+discover a jquery alternative main module size less 6KB. first npm module using cjs, esm and browser.
 
 ## npm module
 
