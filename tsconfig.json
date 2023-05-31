@@ -7,7 +7,7 @@
       "esnext"
     ],
     "esModuleInterop": false,
-    "strict": true,
+    "alwaysStrict": true,
     "noImplicitAny": true,
     "alwaysStrict": false,
     "strictNullChecks": true

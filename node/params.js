@@ -1,3 +1,4 @@
+"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.$urlParams = void 0;
 const $urlParams = ({ paramsList, splitparams, paramsNameAppend }) => {

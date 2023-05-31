@@ -1,4 +1,18 @@
 import { writeFile } from "node:fs/promises"
+import { 
+  arch, 
+  cpus, 
+  freemem,
+  totalmem,
+  platform,
+  version,
+  release,
+  machine,
+} from 'node:os'
+
+interface Props {
+  [s: string]: any;
+}
 
 const $writeFile = async (filename: string, data: any | any[]) => {
   // detect falsy values
@@ -19,4 +33,17 @@ const $writeFile = async (filename: string, data: any | any[]) => {
   }
 }
 
-export { $writeFile }
+const $osInfo: Readonly<Props> = {
+  systemName: platform(),
+  kernel: release(),
+  osVersion: version(),
+  arch: arch(),
+  machine: machine(),
+  cpu: cpus()[0].model,
+  speed: `${(cpus()[0].speed / 1e3).toFixed(2)} Ghz`,
+  totalRam: `${(totalmem() / 1e9).toFixed(2)} GB`,
+  freeRam: `${(freemem() / 1e9).toFixed(2)} GB`,
+}
+
+
+export { $writeFile, $osInfo }

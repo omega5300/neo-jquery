@@ -103,6 +103,9 @@ class RadioPlayer extends HTMLElement {
     audioVolume.type = 'range';
     audioVolume.min = '0'
     audioVolume.max = '100'
+    
+    // default volume
+    audio.volume = audioVolume.valueAsNumber / 100
 
     // audio timer
     audioTimer.textContent = this.radioTime(audio.duration || 0);
