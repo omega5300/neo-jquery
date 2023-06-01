@@ -19,6 +19,6 @@
 }
 
 .link {
-  color: #000;
+  color: var(--ifm-font-color-base);
   font-size: 1.3em;
 }
