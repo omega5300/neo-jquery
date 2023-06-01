@@ -22,7 +22,7 @@
       .timeline {
         position: relative;
         max-width: 70%;
-        max-height: 80%;
+        max-height: 40vh;
         margin: auto;
       }
       
