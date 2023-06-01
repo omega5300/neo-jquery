@@ -3,7 +3,6 @@
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 8px;
   margin: 10px;
-  height: 40vh;
 }
 
 .content {
