@@ -7,7 +7,6 @@ import styles from './kardesler.module.css';
 
 const kardesler = [
   {
-    classNames: [styles.container, styles.left],
     imgUri: 'https://images.unsplash.com/photo-1551893665-f843f600794e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODQ5Nzg5NjV8&ixlib=rb-4.0.3&q=80&w=400',
     imgAlt: 'seyyahi solist',
     linkIG: 'https://www.instagram.com/seyyahikaktus',
@@ -15,7 +14,6 @@ const kardesler = [
     desc: 'kaktüs kardeş seyyahi IG'
   },
   {
-    classNames: [styles.container, styles.right],
     imgUri: 'https://images.unsplash.com/photo-1463936575829-25148e1db1b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODQ5ODE1NDd8&ixlib=rb-4.0.3&q=80&w=400',
     imgAlt: 'melodi SS',
     linkIG: 'https://www.instagram.com/melodikaktus',
@@ -32,25 +30,23 @@ export default function Kardesler() {
       title="katus-kardesler"
       description="katus kardesler intagram promo"
     >
-      <main className={styles.timeline}>
+      <main className={styles.cards}>
         {kardesler.map((kardes, i) => (
-          <section className={clsx(...kardes.classNames)} key={i}>
-            <div className={styles.content}>
-              <img 
-                className={styles.image}
-                src={kardes.imgUri} 
-                alt={kardes.imgAlt} 
-              />
+          <section className={styles.content} key={i}>
+            <img 
+              className={styles.image}
+              src={kardes.imgUri} 
+              alt={kardes.imgAlt} 
+            />
               
-              <a 
-                className={styles.link}
-                href={kardes.linkIG} 
-                target="_blank" 
-                title={kardes.titleIG}
-              >
-                {kardes.desc}
-              </a>
-            </div>
+            <a 
+              className={styles.link}
+              href={kardes.linkIG} 
+              target="_blank" 
+              title={kardes.titleIG}
+            >
+              {kardes.desc}
+            </a>
           </section>
         ))} 
       </main>
