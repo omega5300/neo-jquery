@@ -1,11 +1,11 @@
 class RadioPlayer extends HTMLElement {
   [s: string]: any;
 
-  src: string;
+  src!: string;
 
   constructor() {
     super();
-    this.src = '';
+    this.src;
   }
 
   // time function
