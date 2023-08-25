@@ -2,11 +2,12 @@
   "compilerOptions": {
     "module": "ES2022",
     "declaration": true,
-    "outDir": "./components"
+    "outDir": "./components",
   },
   "files": [
     "./src/components/accordion.ts",
     "./src/components/modalImage.ts",
+    "./src/components/mediaCard.ts",
     "./src/components/radioPlayer.ts"
   ],
   "exclude": [ "./src/core", "./src/node", "./src/browser" ],

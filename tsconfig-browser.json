@@ -2,6 +2,7 @@
   "compilerOptions": {
     "module": "None",
     "declaration": false,
+    "strict": true,
     "outDir": "./browser"
   },
   "files": [

@@ -137,4 +137,4 @@ class MediaCard extends HTMLElement {
 	}
 }
 
-customElements.define("preview-card", PreviewCard);
+customElements.define("media-card", MediaCard);

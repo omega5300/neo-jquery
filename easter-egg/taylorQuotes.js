@@ -45,7 +45,7 @@ class TaylorQuotes extends HTMLElement {
     const cite = document.createElement('cite');
     cite.classList.add('cite');
 
-    fetch('https://taylorswiftapi.herokuapp.com/get')
+    fetch('https://taylorswiftapi.onrender.com/get')
       .then(res => res.json())
       .then(data => {
         quote.cite = data.song;
