@@ -1,0 +1,74 @@
+.jhr {
+	min-height: 100vh;
+	background-image: linear-gradient(90deg, hsl(303, 90%, 61%) 0%, hsl(197, 100%, 64%) 100%);
+	background-color: hsla(303, 90%, 61%);
+	color: #fff;
+	display: grid;
+	place-items: center;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	list-style: none;
+}
+
+.profile {
+	display: block;
+	border-radius: 50%;
+}
+
+.desc {
+	text-align: center;
+}
+
+.webLink,
+.facebookLink, 
+.youtubeLink, 
+.twitchLink,
+.instagramLink,
+.tiktokLink {
+	--ifm-link-color: #fff;
+	display: inline-block;
+	border-radius: 195px;
+	font-size: 1em;
+	padding: 1rem;
+	width: 100%;
+	text-align: center;
+	color: var(--ifm-link-color);
+	background-color: var(--brand-color);
+}
+
+.webLink {
+	--brand-color: #b744d4;
+}
+
+.facebookLink {
+	--brand-color: #1877F2;
+}
+
+.instagramLink {
+	--brand-color: #c13584;
+}
+
+.youtubeLink {
+	--brand-color: #a00;
+}
+
+.tiktokLink {
+	--brand-color: #010101;
+}
+
+.twitchLink {
+	--brand-color: #6441a5;
+}
+
+.webLink:hover, 
+.facebookLink:hover,
+.youtubeLink:hover, 
+.twitchLink:hover,
+.instagramLink:hover,
+.tiktokLink:hover {
+	color: var(--ifm-link-color);
+}

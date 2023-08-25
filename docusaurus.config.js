@@ -86,11 +86,6 @@ const config = {
             label: 'docs',
           },
           {
-            to: '/kardesler', 
-            label: 'kaktus kardesler IG', 
-            position: 'left'
-          },
-          {
             href: 'https://github.com/omega5300/neo-jquery/tree/docs',
             label: 'GitHub',
             position: 'right',

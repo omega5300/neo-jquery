@@ -7,10 +7,12 @@ keywords: [neo-jquery module, neo-jquery npm, neo-jquery versions]
 
 # changelog
 
-# changelog
-
 ## version 1.1.x
 notes from version 1.1.0 +
+
+### version 1.1.2
+- remove & modify some easter eggs
+- new webcomponents media card
 
 ### version 1.1.1
 - add default volume in radio player
