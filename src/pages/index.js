@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <Layout
       title="home"
-      description="modular javasctipt library">
+      description="modular javasctipt library of js DOM, node and webcomponents">
       <HomepageHeader />
     </Layout>
   );
