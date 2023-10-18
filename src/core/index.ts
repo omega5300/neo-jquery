@@ -70,6 +70,10 @@ const $ajax = async ({
       body: data,
       headers,
     });
+    
+    if(!res.ok) {
+    	throw new Error(`HTTP error: ${res.status}`)
+    }
 
     switch (dataType) {
       case 'text':
@@ -117,20 +121,12 @@ const $toast = (msg: string, classAlert: string, time: number) => {
   }, time);
 };
 
+const $url = (url: string) => new URL(url);
+
 // exports
 export {
-  $root,
-  $body,
-  $selector,
-  $selectorAll,
-  $id,
-  $date,
-  $getJSON,
-  $ajax,
-  $createElement,
-  $toast,
-  fadeIn,
-  fadeOut,
-  hide,
-  show,
+  $root, $body, $selector, $selectorAll,
+  $id, $date, $getJSON, $ajax,
+  $createElement, $toast, $url, fadeIn,
+  fadeOut, hide, show,
 }

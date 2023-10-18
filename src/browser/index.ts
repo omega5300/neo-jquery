@@ -15,7 +15,7 @@ styles.textContent = `
   .show, .hide {
     transition: opacity 400ms;
   }
-  
+
   .show {
     opacity: 1;
   }
@@ -70,6 +70,10 @@ const $ajax = async ({
       body: data,
       headers,
     });
+    
+    if(!res.ok) {
+    	throw new Error(`HTTP error: ${res.status}`)
+    }
 
     switch (dataType) {
       case 'text':
@@ -116,3 +120,5 @@ const $toast = (msg: string, classAlert: string, time: number) => {
     $body.removeChild(toast);
   }, time);
 };
+
+const $url = (url: string) => new URL(url);

@@ -27,21 +27,21 @@ class Accordion extends HTMLElement {
 
       ::slotted(.accordion-panel) {
         height: auto;
-        padding: var(--accordion-panel-padding);
-        background-color: var(--accordion-panel-bg);
-        color: var(--accordion-panel-textColor);
+        padding: var(--accordion-panel-padding, 0 18px);
+        background-color: var(--accordion-panel-bg, #fff);
+        color: var(--accordion-panel-textColor, #000);
         overflow: auto;
         margin: 0;
       }
 
       .accordion-title {
-        background-color: var(--accordion-title-bg);
-        color: var(--accordion-title-textColor);
+        background-color: var(--accordion-title-bg, #0f0);
+        color: var(--accordion-title-textColor, #fff);
         cursor: pointer;
-        padding: var(--accordion-title-padding);
+        padding: var(--accordion-title-padding, 18px);
         outline: none;
         list-style: none;
-        font-size: var(--accordion-title-fs);
+        font-size: var(--accordion-title-fs, 16px);
         transition: 0.5s;
       }
     `;

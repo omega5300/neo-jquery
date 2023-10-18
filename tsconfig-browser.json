@@ -1,14 +1,17 @@
 {
   "compilerOptions": {
-    "module": "None",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "declaration": false,
+    "esModuleInterop": false,
     "strict": true,
     "outDir": "./browser"
   },
   "files": [
     "./src/browser/index.ts",
     "./src/browser/scraping.ts",
-    "./src/browser/intl.ts"
+    "./src/browser/intl.ts",
+    "./src/browser/detectBrowser.ts"
   ],
   "exclude": [ "./src/core", "./src/node", "./src/components" ],
   "extends": "./tsconfig.json"

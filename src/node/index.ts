@@ -45,5 +45,6 @@ const $osInfo: Readonly<Props> = {
   freeRam: `${(freemem() / 1e9).toFixed(2)} GB`,
 }
 
+const $url = (url: string) => new URL(url);
 
-export { $writeFile, $osInfo }
+export { $writeFile, $osInfo, $url }

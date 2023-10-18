@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "module": "ES2022",
+    "moduleResolution": "bundler",
+    "esModuleInterop": false,
     "declaration": true,
     "outDir": "./components",
   },
@@ -10,6 +12,8 @@
     "./src/components/mediaCard.ts",
     "./src/components/radioPlayer.ts"
   ],
-  "exclude": [ "./src/core", "./src/node", "./src/browser" ],
+  "exclude": [ 
+  	"./src/core", "./src/node", "./src/browser"
+  ],
   "extends": "./tsconfig.json"
 }

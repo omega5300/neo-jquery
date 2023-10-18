@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
+    "module": "nodenext",
     "esModuleInterop": true,
     "declaration": true,
     "outDir": "./core",
@@ -8,7 +8,8 @@
   "files": [
     "./src/core/index.ts",
     "./src/core/scraping.ts",
-    "./src/core/intl.ts"
+    "./src/core/intl.ts",
+    "./src/core/detectBrowser.ts"
   ],
   "exclude": [ "./src/node", "./src/browser", "./src/components" ],
   "extends": "./tsconfig.json",

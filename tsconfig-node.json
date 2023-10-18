@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "Node",
+    "module": "nodeNext",
+    "moduleResolution": "nodenext",
     "esModuleInterop": true,
     "declaration": true,
     "outDir": "./node"

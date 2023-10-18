@@ -60,7 +60,7 @@ class MediaCard extends HTMLElement {
 		styles.textContent = `
 			:host {
 				box-sizing: border-box;
-				font-family: var(--font-body);
+				font-family: var(--font-body, "Kaushan Script");
 				font-weight: 400;
 				font-size: 100%;
 				line-height: 1.5;
@@ -90,7 +90,7 @@ class MediaCard extends HTMLElement {
 			}
 
 			.title {
-				font-family: var(--font-title);
+				font-family: var(--font-title, "Roboto Slab");
 				font-size: 2rem;
 				margin-left: -0.35rem;
 				opacity: 0.5;

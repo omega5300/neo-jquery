@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.$osInfo = exports.$writeFile = void 0;
+exports.$url = exports.$osInfo = exports.$writeFile = void 0;
 const promises_1 = require("node:fs/promises");
 const node_os_1 = require("node:os");
 const $writeFile = async (filename, data) => {
@@ -33,3 +33,5 @@ const $osInfo = {
     freeRam: `${((0, node_os_1.freemem)() / 1e9).toFixed(2)} GB`,
 };
 exports.$osInfo = $osInfo;
+const $url = (url) => new URL(url);
+exports.$url = $url;

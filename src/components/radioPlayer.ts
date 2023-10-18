@@ -50,7 +50,7 @@ class RadioPlayer extends HTMLElement {
     styles.textContent = `
       :host {
         --radio-color: #222;
-        --radio-outline:;
+        --radio-outline: 1px solid #000;
         --radio-btn-size: 1em;
       }
       
