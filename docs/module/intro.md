@@ -256,3 +256,14 @@ $toast('hello user', 'alert', 5000)
 | param: classAlert | string |
 | param: time | number |
 | return | void |
+
+### $url
+
+``` js
+$url('https://example.com')
+```
+
+| desc | type |
+| ----------- | ----------- |
+| param: url | string |
+| return | URL |

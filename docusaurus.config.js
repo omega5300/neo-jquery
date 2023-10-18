@@ -10,7 +10,7 @@ const config = {
   tagline: 'modular javasctipt library',
   url: 'https://neo-jquery.vercel.app',
   baseUrl: '/',
-  noIndex: false,
+  noIndex: true,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',

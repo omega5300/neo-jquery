@@ -95,21 +95,11 @@ export default function Jhr() {
               <FontAwesomeIcon icon={faInstagram} /> <span>gaming & cosplay</span>
             </a>
           </li>
-          
-          <li>
-          	<a 
-          		className={styles.instagramLink} 
-          		href="" 
-          		target="_blank"
-          	>
-          		<FontAwesomeIcon icon={faInstagram} /> <span>IG baile</span>
-          	</a>
-          </li>
             	
           <li>
             <a 
             	className={styles.tiktokLink} 
-            	href="https://www.instagram.com/japonjhr/" 
+            	href="https://www.tiktok.com/@japonhr" 
             	target="_blank"
             >
             	<FontAwesomeIcon icon={faTiktok} /> <span>gaming & cosplay</span>
@@ -119,7 +109,7 @@ export default function Jhr() {
           <li>
           	<a 
           		className={styles.tiktokLink} 
-          		href="" 
+          		href="https://www.tiktok.com/@japonhr2" 
           		target="_blank"
           	>
           		<FontAwesomeIcon icon={faTiktok} /> <span>TT baile</span>

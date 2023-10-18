@@ -9,7 +9,7 @@ keywords: [neo-jquery npm, frontend scraping modules]
 
 this module called frontend scraping is a relatively new module that allows us to use web scraping for the client side as we do in the backend.
 
-use a php file with a request parameter whether to use get or post weighs less than 1KB
+use a vercel with a request parameter whether to use get or post weighs less than 1KB
 
 scraping module using serverless node backend code.
 

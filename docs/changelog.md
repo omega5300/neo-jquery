@@ -10,6 +10,11 @@ keywords: [neo-jquery module, neo-jquery npm, neo-jquery versions]
 ## version 1.1.x
 notes from version 1.1.0 +
 
+### version 1.1.3
+- add $url in core module, node & browser
+- add $browserChecker in browser & core
+- add fallback vars in webcomponents except modal component.
+
 ### version 1.1.2
 - remove & modify some easter eggs
 - new webcomponents media card
