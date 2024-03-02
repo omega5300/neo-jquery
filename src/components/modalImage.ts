@@ -1,6 +1,6 @@
 class ModalImg extends HTMLElement {
-  url: any | string;
-  alt: any | string;
+  url!: any | string;
+  alt!: any | string;
   constructor() {
     super();
     this.url;

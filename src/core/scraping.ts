@@ -4,7 +4,7 @@ type scraping = {
   failed: (param: any) => void;
 };
 
-const $scraping = async ({
+export const $scraping = async ({
   url,
   web,
   failed
@@ -24,6 +24,6 @@ const $scraping = async ({
 
     web(page)
   } catch (err) { failed(err) }
-}
+};
 
-export { $scraping };
+

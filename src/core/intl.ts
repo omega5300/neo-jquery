@@ -42,8 +42,4 @@ const $timeago = (locale: string, date: null | any = null) => {
   }
 };
 
-export {
-  $currency,
-  $list,
-  $timeago
-}
+export { $currency, $list, $timeago }

@@ -48,6 +48,9 @@ const $id = (el: string) => document.getElementById(el);
 // date
 const $date = (date: null | any = null) => new Date(date)
 
+// audio
+const $audio = (path?: string) => new Audio(path)
+
 // ajax
 const $getJSON = async (url: string, callback: (param: any) => void) => {
   const res = await fetch(url);
