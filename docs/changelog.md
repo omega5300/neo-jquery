@@ -10,6 +10,10 @@ keywords: [neo-jquery module, neo-jquery npm, neo-jquery versions]
 ## version 1.1.x
 notes from version 1.1.0 +
 
+### version 1.1.4
+- add $audio in core module & browser
+- add webcomponent getJson > warning if api using cors
+
 ### version 1.1.3
 - add $url in core module, node & browser
 - add $browserChecker in browser & core

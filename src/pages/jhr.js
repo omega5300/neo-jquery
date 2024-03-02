@@ -28,8 +28,13 @@ export default function Jhr() {
      <Head>
      	<title>Japon HR</title>
      	<link rel="canonical" href="http://neo-jquery.vercel.app/jhr" />
-     	<meta property="og:image" content="img/profile.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
+     	<meta property="og:title" content="Japon HR" />
+     	<meta property="og:description" content="cosplayer, machinimadora y bailarina de pole exotic & pole fitness" />
+     	<meta property="og:type" content="website" />
+     	<meta property="og:locale" content="es_MX" />
+     	<meta property="og:url" content="http://neo-jquery.vercel.app/jhr" />
+     	<meta property="og:image" content="http://neo-jquery.vercel.app/img/profile.jpg" />
+      <meta name="twitter:card" content="summary_large_image" />
      </Head>
      
      <main className={styles.jhr}>
