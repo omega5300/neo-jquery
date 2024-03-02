@@ -20,7 +20,7 @@ for using the webcomponents modal image with html dialog tag form in js
 <!-- modal Image -->
 <modal-image url="/example.jpg" alt="hello"></modal-image>
 <!-- script -->
-<script src="https://cdn.jsdelivr.net/npm/neo-jquery/components/modalImage.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/neo-jquery@latest/components/modalImage.js"></script>
 ```
 
 ``` js
@@ -31,7 +31,7 @@ require('neo-jquery/components/modalImage')
 import 'neo-jquery/components/modalImage'
 
 // esm as browser
-import 'https://cdn.jsdelivr.net/npm/neo-jquery/components/modalImage.js'
+import 'https://cdn.jsdelivr.net/npm/neo-jquery@latest/components/modalImage.js'
 ```
 
 ## accordion
@@ -44,7 +44,7 @@ the accordion component using html native tags details and summary using:
     <p class="accordion-panel">lorem</p>
 </neo-accordion>
 <!-- script -->
-<script src="https://cdn.jsdelivr.net/npm/neo-jquery/components/accordion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/neo-jquery@latest/components/accordion.js"></script>
 ```
 
 **styles**
@@ -70,7 +70,7 @@ require('neo-jquery/components/accordion')
 import 'neo-jquery/components/accordion'
 
 // esm as browser
-import 'https://cdn.jsdelivr.net/npm/neo-jquery/components/accordion.js'
+import 'https://cdn.jsdelivr.net/npm/neo-jquery@latest/components/accordion.js'
 ```
 
 ## radio player
@@ -78,7 +78,7 @@ import 'https://cdn.jsdelivr.net/npm/neo-jquery/components/accordion.js'
 <!-- modal Image -->
 <neo-radio-player src="http://example.com/play.mp3"></neo-radio-player>
 <!-- script -->
-<script src="https://cdn.jsdelivr.net/npm/neo-jquery@1.1.0/components/radioPlayer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/neo-jquery@latest/components/radioPlayer.js"></script>
 ```
 > recommend stream audio url or single tracks
 
@@ -102,7 +102,7 @@ require('neo-jquery/components/radioPlayer')
 import 'neo-jquery/components/radioPlayer'
 
 // esm as browser
-import 'https://cdn.jsdelivr.net/npm/neo-jquery/components/radioPlayer.js'
+import 'https://cdn.jsdelivr.net/npm/neo-jquery@latest/components/radioPlayer.js'
 ```
 
 ## media card
@@ -121,7 +121,7 @@ this components is special if using tags and using external fonts.
 </media-card>
 
 <!-- script -->
-<script src="https://cdn.jsdelivr.net/npm/neo-jquery@1.1.0/components/mediaCard.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/neo-jquery@latest/components/mediaCard.js"></script>
 ```
 
 ``` css
@@ -140,7 +140,40 @@ require('neo-jquery/components/mediaCard')
 import 'neo-jquery/components/mediaCard'
 
 // esm as browser
-import 'https://cdn.jsdelivr.net/npm/neo-jquery@1.1.0/components/mediaCard.js'
+import 'https://cdn.jsdelivr.net/npm/neo-jquery@latest/components/mediaCard.js'
+```
+
+## get Json view
+
+this component using as get json info from rest api warning if using api with cors server
+
+``` html
+<!-- media card -->
+<neo-get-json 
+	url="http://jsonplaceholder.typicode.com/users" spaces="2"></neo-get-json>
+
+<!-- script -->
+<script src="https://cdn.jsdelivr.net/npm/neo-jquery@latest/components/getJson.js"></script>
+```
+
+``` css
+neo-get-json {
+  --bgc-json: #000; /* any color */
+  --txt-color: #fff; /* color combine with background */
+  --width: 80%; /* percentage or vw */
+  --height: 52vh; /* only vh or static size as px */
+}
+```
+
+``` js
+// cjs electron
+require('neo-jquery/components/getJson')
+
+// esm as module bundle
+import 'neo-jquery/components/getJson'
+
+// esm as browser
+import 'https://cdn.jsdelivr.net/npm/neo-jquery@latest/components/getJson.js'
 ```
 
 ## browser compatibility

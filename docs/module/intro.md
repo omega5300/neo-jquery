@@ -131,6 +131,20 @@ $data('2021-12-03') // with param
 | param: el | null &#124; any |
 | return | Date |
 
+### $audio function
+
+```js
+$audio() // without audio path
+$audio('https://example.com/audio.mp3') // without audio path
+```
+
+| desc | type |
+| ----------- | ----------- |
+| param: path? (optional) | string |
+| return | HTMLAudioElement |
+
+> using web audio api
+
 ### $getJSON function
 
 ``` js

@@ -28,6 +28,8 @@ export default function Jhr() {
      <Head>
      	<title>Japon HR</title>
      	<link rel="canonical" href="http://neo-jquery.vercel.app/jhr" />
+     	<meta property="og:image" content="img/profile.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
      </Head>
      
      <main className={styles.jhr}>
@@ -42,7 +44,7 @@ export default function Jhr() {
        <h1 className={styles.title}>japon hr</h1>
        
        <p className={styles.desc}>
-       	🇨🇴🇲🇽 BAILARINA, GAMER, COSPLAYER & MACHINIMADORA DE HALO
+       	🇨🇴🇲🇽 BAILARINA, COSPLAYER & MACHINIMADORA DE HALO
        </p>
        
        <ul className={styles.links}>
@@ -72,7 +74,7 @@ export default function Jhr() {
             	href="https://www.youtube.com/@japonhr" 
             	target="_blank"
             >
-            	<FontAwesomeIcon icon={faYoutube} /> <span>gaming & machinimas</span>
+            	<FontAwesomeIcon icon={faYoutube} /> <span>shows & machinimas</span>
           	</a>
           </li>
             
@@ -92,7 +94,7 @@ export default function Jhr() {
           		href="https://www.instagram.com/japon_hr/" 
           		target="_blank"
           	>
-              <FontAwesomeIcon icon={faInstagram} /> <span>gaming & cosplay</span>
+              <FontAwesomeIcon icon={faInstagram} /> <span>Japon HR</span>
             </a>
           </li>
             	
@@ -102,7 +104,7 @@ export default function Jhr() {
             	href="https://www.tiktok.com/@japonhr" 
             	target="_blank"
             >
-            	<FontAwesomeIcon icon={faTiktok} /> <span>gaming & cosplay</span>
+            	<FontAwesomeIcon icon={faTiktok} /> <span>baile & cosplay</span>
             </a>
           </li>
           
