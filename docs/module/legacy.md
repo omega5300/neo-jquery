@@ -27,7 +27,7 @@ hello.textContent = 'hello world'
 ```
 
 :::tip
-this using module is $.{function} example $.body or $.id('hi')
+this using module is $.&lcub;function&rcub; example $.body or $.id('hi')
 :::
 
 ## function and selectors

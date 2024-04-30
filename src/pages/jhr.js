@@ -1,4 +1,3 @@
-import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -28,6 +27,7 @@ export default function Jhr() {
      <Head>
      	<title>Japon HR</title>
      	<link rel="canonical" href="http://neo-jquery.vercel.app/jhr" />
+     	<meta name="robots" content="noindex,nofollow" />
      	<meta property="og:title" content="Japon HR" />
      	<meta property="og:description" content="cosplayer, machinimadora y bailarina de pole exotic & pole fitness" />
      	<meta property="og:type" content="website" />

@@ -1,0 +1,155 @@
+.images {
+	columns: 2 auto;
+	column-gap: 0.3rem;
+	margin-inline: auto;
+	width: 80%;
+}
+
+.image {
+	filter: drop-shadow(0 0 0.75rem #000);
+	object-fit: cover;
+}
+
+.image:last-child {
+	width: 65%
+}
+
+.hero {
+  margin-inline: auto;
+  padding: 3rem 1rem;
+  width: 100%;
+  max-width: 48rem;
+}
+
+.hero> :not([hidden])~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-block: calc(1.5rem * calc(1 - var(--tw-space-y-reverse))) calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.hero_title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.hero_img {
+  display:block;
+  margin-inline: auto;
+  border-radius: 0.75rem;
+  height: 60%;
+  object-fit: cover;
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.section {
+  width: 100%;
+  margin-inline: auto;
+  max-width: 48rem;
+  padding: 2rem 1rem;
+}
+
+.section> :not([hidden])~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-block: calc(1.5rem * calc(1 - var(--tw-space-y-reverse))) calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.section:nth-child(even) {
+  background-color: #dadee6;
+  color: #000000;
+}
+
+.section:nth-child(odd) {
+  background-color: #1f2937;
+  color: #9ca3af;
+}
+
+.section_title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.section:nth-child(odd) .section_title {
+  color: #fff;
+}
+
+.section:nth-child(even) .section_title {
+  color: #000;
+}
+
+@media (min-width: 640px) {
+  .hero {
+      max-width: 640px;
+      padding: 6rem 1.5rem;
+  }
+
+  .hero_title {
+      font-size: 3rem;
+      line-height: 1;
+  }
+
+  .section {
+      max-width: 640px;
+  }
+
+  .section_title {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+      max-width: 768px;
+      padding: 6rem 1.5rem;
+  }
+
+  .hero_title {
+      font-size: 3.75rem;
+      line-height: 1;
+  }
+  
+  .section {
+      max-width: 768px;
+      padding: 6rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+      max-width: 1024px;
+      padding-block: 8rem;
+  }
+
+  .section {
+      max-width: 1024px;
+      padding-block: 8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero {
+      max-width: 1280px;
+  }
+
+  .section {
+      max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .hero {
+      max-width: 1536px;
+  }
+  
+  .section {
+      max-width: 1536px;
+  }
+}
