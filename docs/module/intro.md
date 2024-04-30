@@ -189,7 +189,7 @@ $ajax({
 
 | desc | type |
 | ----------- | ----------- |
-| params: { url, type, data, headers, dataType, success, failed } | ajax |
+| params: &lcub; url, type, data, headers, dataType, success, failed &rcub; | ajax |
 | return | Promise&#60;void&#62; |
 
 #### ajax type params

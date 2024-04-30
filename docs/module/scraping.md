@@ -51,7 +51,7 @@ $scraping({
 
 | desc | type |
 | ----------- | ----------- |
-| params: { url, web, failed } | scraping |
+| params: &lcub; url, web, failed &rcub; | scraping |
 | return | Promise&#60;void&#62; |
 
 ### scraping type params

@@ -29,7 +29,7 @@ $urlParams({
 
 | desc | type |
 | ----------- | ----------- |
-| params: {paramsList, splitparams, paramsNameAppend} | Params |
+| params: &lcub; paramsList, splitparams, paramsNameAppend &rcub; | Params |
 
 ## Params types
 
