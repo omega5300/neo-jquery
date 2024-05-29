@@ -1,0 +1,70 @@
+/* css carousel */
+.carousel {
+	display: flex;
+	height: var(--carousel-height, 25rem);
+	width: var(--carousel-width, 45rem);
+	border-radius: var(--carousel-radius, 1rem);
+	position: relative;
+	scroll-snap-type: x mandatory;
+	overflow: auto hidden;
+	
+	& > img {
+		flex: 0 0 100%;
+		height: var(--img-height, 100%);
+		object-fit: cover;
+		position: sticky;
+		left: 0;
+		scroll-snap-align: start;
+	}
+}
+
+/* grids */
+.square-grid, .grid-auto-columns {
+	display: grid;
+}
+
+.square-grid {
+	--grid-repeat: repeat(4, 1fr);
+	gap: 0.5rem;
+	grid-auto-flow: dense;
+	grid-template-rows: var(--grid-repeat);
+	grid-template-columns: var(--grid-repeat);
+  
+  & img {
+    display: block;
+    max-width: 100%;
+  }
+  
+	& :is(.img-1x1, .img-2x1) {
+		grid-row-end: span 1;
+	}
+	
+	& :is(.img-2x1, .img-2x2) {
+		grid-column-end: span 2;
+	}
+  
+  & :is(.img-1x1, .img-2x2) {
+    aspect-ratio: 1 / 1;
+  }
+  
+  & .img-2x1 {
+    aspect-ratio: 16 / 9;
+  }
+	
+	& .img-1x1 {
+		grid-column-end: span 1;
+	}
+	
+	& .img-2x2 {
+		grid-row-end: span 2;
+	}
+}
+
+.grid-auto-columns {
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	gap: 0.5rem;
+  
+  & img {
+    max-width: 100%;
+  }
+}
