@@ -85,7 +85,7 @@ const config = {
             label: 'docs',
           },
           {
-            href: 'https://github.com/omega5300/neo-jquery/tree/docs',
+            href: 'https://github.com/omega5300/neo-jquery',
             label: 'GitHub',
             position: 'right',
           },

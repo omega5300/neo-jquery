@@ -12,14 +12,14 @@ const imgList = [
 const journalPoints = [
 	{
 		title: 'diagrama de caso de uso',
-		desc: `el diagrama de caso es la mas sencillo de usar debido que poseo experiencia previa en crear diagramas UML mas en concreto a los diagramas de caso de uso y la herramienta que mas tenia conocimiento.\n\n
-se utilizo el software visual paradigm ya que lo conocia hace la verdad habia mas opciones pero visual paradigm es en que màs conozco.`
+		desc: `el diagrama de caso es lo más sencillo de realizar debido que poseo experiencia previa en crear estos diagramas.\n\n
+se utilizo el software visual paradigm ya que lo conocia la verdad habia mas opciones pero visual paradigm es en que màs conozco.`
 	},
 	{
 		title: 'diseño de la app',
-		desc: `para el diseño se opto por figma ya que es uno software de diseño en realidad se podria realizar prototipar la app usando la suite de adobe o canva pero figma tiene mas ventajas que las otras app no tiene.\n\n
+		desc: `para el diseño se opto por figma ya que es uno software de diseño que me permite diseñar y prototipar la app. si se hubiera usando la suite de adobe o canva. pero figma tiene mas ventajas que las otras app no tiene.\n\n
 					
-figma tiene paquetes de interfaces hechos por la comunidad y algunas empresas como google con material design se opto por la biblioteca de material design 2 o 3 y plugin para crear los color para la app.`
+la ventaja de figma es que tiene paquetes de interfaces hechos por la comunidad y algunas empresas como google con material design se opto por la biblioteca de material design 2 o 3 y el plugin para crear los colores de la app.`
 	},
 	{
 		title: 'escanear las cartas',
@@ -27,7 +27,7 @@ figma tiene paquetes de interfaces hechos por la comunidad y algunas empresas co
 					
 se utilizo un scanner puro en lugar de un celular para mayor facilidad y no arrastar con la desventja de usar el celular con una app de scanner y buena iluminaciòn.\n\n
 					
-la unica desventaja que me encontre fue realizar cada escaneo uno por uno.`
+la unica desventaja que me encontre sin importar el medio es en escanear las cartas uno por uno.`
 	},
 	{
 		title: 'la version para ionic',
@@ -39,7 +39,7 @@ lo estructure como lo tenia planeado salvo su biblioteca de iconos pero no es na
 		title: 'version para android',
 		desc: `esta version fue la planeaciòn mas compleja la experiencia en kotlin me fue bien apesar de tener conocimientos en js y aprendizaje en java.\n\n
 		
-no se utilizo nada de chat GPT o derivados para crear apps en cambio se opto por ir a la documentaciòn, foros y videos de youtube ademas algo de codigo para la splash screen la dificultad de aprender jetpack compose fue algo compleja al principio pero al final lo conseguir con buen resultado debido a la similitud con los componetes tipo react o vue y la programaciòn funcional.`
+no se utilizo nada de chat GPT o ia de chat para crear apps en cambio se opto por ir a la documentaciòn de android, foros y videos de youtube ademas algo de codigo para la splash screen la dificultad de aprender jetpack compose fue algo compleja al principio pero al final lo conseguir con un buen resultado debido a la similitud con los componetes tipo react o vue, los widgets de flutter y la programaciòn funcional.`
 	}
 ]
 

@@ -145,6 +145,27 @@ $audio('https://example.com/audio.mp3') // without audio path
 
 > using web audio api
 
+### $canvas function
+
+```html
+<canvas id="draw" height="600" width="800"></canvas>
+```
+
+```js
+$canvas('#draw') // opt 1
+const canvas = $canvas('#draw') // opt 2
+```
+
+| desc | type |
+| ----------- | ----------- |
+| param: id | string |
+| return | HTMLCanvasElement |
+
+
+:::warning
+only if know canvas api.
+:::
+
 ### $getJSON function
 
 ``` js

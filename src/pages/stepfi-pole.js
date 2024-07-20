@@ -68,7 +68,7 @@ export default function StepfiPole() {
      <main className={styles.stepfi}>
        <img 
        		className={styles.profile}
-       		src="img/profile.jpg" 
+       		src="/img/profile.jpg" 
        		alt="image" 
        		width={200}
        		height={200}
