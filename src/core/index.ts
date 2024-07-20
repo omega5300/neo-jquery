@@ -51,6 +51,9 @@ const $date = (date: null | any = null) => new Date(date)
 // audio
 const $audio = (path?: string) => new Audio(path)
 
+// canvas
+const $canvas = (id: string) => (document.querySelector(id) as HTMLCanvasElement)
+
 // ajax
 const $getJSON = async (url: string, callback: (param: any) => void) => {
   const res = await fetch(url);
@@ -129,7 +132,7 @@ const $url = (url: string) => new URL(url);
 // exports
 export {
   $root, $body, $selector, $selectorAll,
-  $id, $date, $audio, $getJSON, $ajax,
+  $id, $date, $audio, $canvas, $getJSON, $ajax,
   $createElement, $toast, $url, fadeIn,
   fadeOut, hide, show,
 }

@@ -3,6 +3,9 @@
 ## version 1.1.x
 notes from version 1.1.0 +
 
+### version 1.1.6
+- add $canvas in core module & browser
+
 ### version 1.1.5
 - add neo-jquery as css modules
 
