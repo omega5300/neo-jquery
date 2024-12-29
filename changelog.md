@@ -3,6 +3,10 @@
 ## version 1.1.x
 notes from version 1.1.0 +
 
+### version 1.1.7
+- add pokedex webcomponent
+- add capture element component
+
 ### version 1.1.6
 - add $canvas in core module & browser
 

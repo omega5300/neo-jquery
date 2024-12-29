@@ -11,7 +11,8 @@
     "./src/components/modalImage.ts",
     "./src/components/mediaCard.ts",
     "./src/components/radioPlayer.ts",
-    "./src/components/getJson.ts"
+    "./src/components/getJson.ts",
+    "./src/components/neoCapture.ts"
   ],
   "exclude": [ 
   	"./src/core", "./src/node", "./src/browser"
