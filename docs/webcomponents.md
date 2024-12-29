@@ -176,6 +176,55 @@ import 'neo-jquery/components/getJson'
 import 'https://cdn.jsdelivr.net/npm/neo-jquery@latest/components/getJson.js'
 ```
 
+## pokedex
+``` html
+<!-- example based in names -->
+<pokemon-info name="pikachu"></pokemon-info>
+
+<!-- example based in id -->
+<pokemon-info pokeID="25"></pokemon-info>
+
+<script src="https://cdn.jsdelivr.net/npm/neo-jquery@latest/components/pokedex.js"></script>
+```
+
+``` js
+// cjs electron
+require('neo-jquery/components/pokedex')
+
+// esm as module bundle
+import 'neo-jquery/components/pokedex'
+
+// esm as browser
+import 'https://cdn.jsdelivr.net/npm/neo-jquery@latest/components/pokedex.js'
+```
+
+## capture element
+
+``` html
+<neo-capture></neo-capture>
+
+<script src="https://cdn.jsdelivr.net/npm/neo-jquery@latest/components/neoCapture.js"></script>
+```
+
+``` css
+neo-capture {
+  --component-h: 480px;
+  --component-w: 640px;
+  --component-outline: 1px solid #000;
+}
+```
+
+``` js
+// cjs electron
+require('neo-jquery/components/neoCapture')
+
+// esm as module bundle
+import 'neo-jquery/components/neoCapture'
+
+// esm as browser
+import 'https://cdn.jsdelivr.net/npm/neo-jquery@latest/components/neoCapture.js'
+```
+
 ## browser compatibility
 
 this section show the compatiblity versions in the webcomponents
